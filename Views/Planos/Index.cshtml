@@ -1,0 +1,238 @@
+@using System.Collections.Generic;
+@using System.IO;
+@using AgoraVai_PontoDigital.Models;
+@{
+Layout = "_Layout";
+var listaFormas = (List<FormaPagamento>) ViewData["listaPlanos"];
+    var userEmail = (string) ViewData["UserLogado"];
+  
+    }
+    <header>
+        @{
+        Html.RenderPartial("_HeaderNavBar");
+        }
+    </header>
+    <main>
+        <section id="section_master_planos">
+
+            <section id="area_planos">
+                <div>
+                    <h2 class="h2">Planos</h2>
+                </div>
+
+                <div id="area_boxs_planos" class="margin-left">
+                    <div class="stylePlan_2">
+                        <!--PLANO médio  2-->
+                        <div>
+                            <h4 class="h4">Com até 5 funcionários</h3>
+
+                                <p class="p_planos">
+                                    - Pagamento Mensal
+                                    <br />
+                                    - Suporte de até 24 horas
+                                    <br />
+                                    - Recomendação para empresas de pequeno porte
+                                </p>
+
+                                <p class="preço_planos">R$ 29,90</p>
+
+                                <form class="form" method="POST" action='@Url.Action("Comprar","Planos")'>
+
+                                    <select id="select" name="formaP" required>
+
+                                        <option value="" disabled selected> Formas de pagamento: </option>
+                                        @foreach(var item in listaFormas){
+                                        <option value="@item.FormaDePagamento"> @item.FormaDePagamento </option>
+                                        }
+                                    </select>
+
+                                    <input id="btn_compre" type="submit" name="preco" value="Compre-já">
+
+                                </form>
+                        </div>
+                    </div>
+                    <!--PAGINA MUTÁVEL-->
+                    <div class="stylePlan">
+                        <!--PLANO médio 1-->
+                        <h4 class="h4">Com até 50 Funcionários</h4>
+
+                        <p class="p_planos">
+                            - Pagamento Mensal
+                            <br />
+                            - Suporte de até 12 horas
+                            <br />
+                            - Recomendação para empresas de pequeno porte
+                        </p>
+
+                        <p class="preço_planos">R$ 149,90</p>
+
+                        <form class="form" method="POST" action='@Url.Action("Comprar","Planos")'>
+                            <select id="select" name="formaP" required>
+                                <option value="" disabled selected> Formas de pagamento: </option>
+                                @foreach(var item in listaFormas){
+                                <option value="@item.FormaDePagamento"> @item.FormaDePagamento </option>
+                                }
+                            </select>
+                            <!-- <select id="select" name="Formas de pagamento" required>
+                            <option value="" disabled selected> Formas de pagamento: </option>
+                            <option value="Cartão de crédito"> Cartão de Crédito </option>
+                            <option value="Boleto Bancário"> Boleto Bancário </option>
+                            <option value="Débito Automático (débito em conta, débito online)"> Débito Automático
+                                (débito em conta, débito online)</option>
+                            <option value="Pagamentos Digitais"> Pagamentos Digitais </option>
+                            <option value="Transferência bancária "> Transferência bancária </option>
+                            <option value="Dinheiro"> Dinheiro </option>
+                            <option value="Cheques"> Cheques </option>
+                        </select> -->
+                            <input id="btn_compre" type="submit" name="preco" value="Compre-já ">
+
+                        </form>
+                    </div>
+                </div>
+
+                <div id="area_boxs_planos">
+
+
+                    <div class="stylePlan">
+                        <!--PAGINA MUTÁVEL-->
+                        <!--NONE-->
+
+                        <div>
+                            <!--PLANO Grande-->
+                            <h4 class="h4">Com até 500 funcionários</h3>
+
+                                <p class="p_planos">
+                                    - Pagamento Mensal
+                                    <br />
+                                    - Suporte de até 2 horas
+                                    <br />
+                                    - Recomendação para empresas de médio porte
+                                </p>
+
+                                <p class="preço_planos">R$ 299,90</p>
+
+                                <form class="form" method="POST" action='@Url.Action("Comprar","Planos")'>
+                                    <select id="select" name="formaP" required>
+                                        <option value="" disabled selected> Formas de pagamento: </option>
+                                        @foreach(var item in listaFormas){
+                                        <option value="@item.FormaDePagamento"> @item.FormaDePagamento </option>
+                                        }
+                                    </select>
+                                    <input id="btn_compre" type="submit" name="preco" value="Compre-já  ">
+
+                                </form>
+                        </div>
+
+                    </div>
+
+                    <div class="stylePlan">
+                        <!--PAGINA MUTÁVEL-->
+                        <!--NONE-->
+
+                        <div>
+                            <!--PLANO Pequeno-->
+                            <h4 class="h4">Acima de 500 funcionários</h3>
+
+                                <p class="p_planos">
+                                    - Pagamento Mensal
+                                    <br />
+                                    - Suporte de até 1 hora
+                                    <br />
+                                    - Recomendação para empresas de grande porte
+                                </p>
+
+                                <p class="preço_planos">A definir..</p>
+
+                                <form class="form" method="POST" action='@Url.Action("Comprar","Planos")'>
+                                    <select id="select" name="formaP" required>
+                                        <option value="" disabled selected> Formas de pagamento: </option>
+                                        @foreach(var item in listaFormas){
+                                        <option value="@item.FormaDePagamento"> @item.FormaDePagamento </option>
+                                        }
+                                    </select>
+                                    <input id="btn_compre" type="submit" name="preco"
+                                        value="Compre-já   ">
+                                </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </section>
+
+        <section id="area_qualidade">
+
+            <div class="video">
+                <!--INSERIR O PROPRIO VIDEO DO YUTUBE NA HTML-->
+                <iframe width="90%" height="415" src="https://www.youtube.com/embed/Pgc_lzXmxtY" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="cont_video">
+                <div>
+
+                    <h2 class="h2_qualidade"> Qualidade!</h2>
+                    <p class="p_qualidade">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quis molestias minus hic,
+                        architecto
+                        rem voluptas dolore accusamus repellat adipisci tempore quibusdam, itaque mollitia quia commodi
+                        expedita ea ipsam minima.Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quis
+                        molestias minus hic, architecto
+                        rem voluptas dolore accusamus repellat adipisci tempore quibusdam, itaque mollitia quia commodi
+                        expedita ea ipsam minima.Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quis
+                        molestias minus hic, architecto
+                        rem voluptas dolore accusamus repellat adipisci tempore quibusdam, itaque mollitia quia commodi
+                        expedita ea ipsam minima.Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quis
+                        molestias minus hic, architecto
+                        rem voluptas dolore accusamus repellat adipisci tempore quibusdam, itaque mollitia quia commodi
+                        expedita ea ipsam minima.Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quis
+                        molestias minus hic, architecto
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="area_gratuidade">
+
+            <section class="cont_gratuito">
+                <div>
+
+                    <h2 class="h2_gratuito">30 dias gratuitos!</h2>
+
+                    <p class="p_qualidade_2" >
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eius sint repellendus commodi
+                        nostrum quidem voluptatum rerum consectetur iste architecto accusantium nemo, praesentium
+                        numquam ea
+                        alias! Quos earum molestias nesciunt?
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum eaque animi in iure. Repellendus
+                        omnis
+                        vitae fuga! Facilis cupiditate dicta accusamus? Alias cumque est consequuntur sunt vel iusto,
+                        quis
+                        quaerat!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eius sint repellendus commodi
+                        nostrum quidem voluptatum rerum consectetur iste architecto accusantium nemo, praesentium
+                        numquam ea
+                        alias! Quos earum molestias nesciunt?
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum eaque animi in iure. Repellendus
+                        omnis
+                        vitae fuga!
+                    </p>
+
+                    <form id="form" method="POST" action='@Url.Action("EnviarSoftware","Planos")'>
+                        <input id="textarea_gratuito" type="email" name="email"
+                            placeholder="Digite seu e-mail para o teste de 30 dias gratuitos">
+                        <input id="btn_enviar_gratuito" type="submit" value="Enviar">
+
+                    </form>
+                </div>
+            </section>
+
+            <article class="img_gratuito">
+                <img src="Imagens/dias_gratuitos.png" alt="Imagem Meramente Ilustrativa" height="400px">
+            </article>
+        </section>
+
+
+        
+
+    </main>

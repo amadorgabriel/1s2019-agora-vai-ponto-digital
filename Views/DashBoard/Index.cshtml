@@ -1,0 +1,191 @@
+@using AgoraVai_PontoDigital.Models;
+@using System.IO;
+
+@{
+Layout = "_Layout";
+var listaAva = (List<AvaliacaoModel>) ViewData["listaGeral"];
+    var lsGeralCount = listaAva.Count;
+
+    var listaAprovada = (List<AvaliacaoModel>) ViewData["listaAprovada"];
+        var lsAprovCount = listaAprovada.Count;
+
+        var listaReprovada = (List<AvaliacaoModel>) ViewData["listaReprovada"];
+            var lsReprovCount = listaReprovada.Count;
+
+            var listaCliente = (List<ClienteModel>) ViewData["clienteGeral"];
+                var lsClienteCount =listaCliente.Count;
+
+                var listaPlano = (List<PlanoModel>) ViewData["listaPlanos"];
+                var lsPlanoCount =listaPlano.Count;
+
+                }
+                <header>
+                    @{
+                    Html.RenderPartial("_HeaderNavBar");
+                    }
+                </header>
+
+                <main>
+
+                    <section id="mainDash">
+                        <h2 class="h2_table">Gerenciamento de Comentários</h2>
+                        <table class="table">
+                            <thead class="thead">
+                                <tr>
+                                    <th class="thThead">ID Comentário</th>
+                                    <th class="thThead">Nome Usuário</th>
+                                    <th class="thThead">Email Usuário</th>
+                                    <th class="thThead">Comentários em ESPERA</th>
+                                    <th class="thThead">Ação</th>
+
+                                </tr>
+                            </thead>
+                            <tbody class="tbody">
+                                @foreach (var item in listaAva)
+                                {
+                                <tr>
+                                    <td class="th_table">@item.Id </td>
+                                    <td class="th_table">@item.ClienteNome</td>
+                                    <td class="th_table">@item.ClienteEmail</td>
+                                    <td class="th_table"> @item.Mensagem </td>
+                                    <td><a href='@Url.Action("ReprovarComentario","Avaliacao")?id=@item.Id'
+                                            class="back-red">Reprovar <a name="@item.Id"
+                                                href='@Url.Action("AprovarComentario","Avaliacao")?id=@item.Id'
+                                                class="back-yellow">Aprovar </td>
+                                </tr>
+                                }
+                            </tbody>
+                        </table>
+
+                        <section class="subMASTER" >
+                        <article class=article>
+
+                            <table class="table_2">
+                                <thead class="thead">
+                                    <tr>
+                                        <th class="thThead">ID Comentário</th>
+                                        <th class="thThead">Email Usuário</th>
+                                        <th class="thThead">Comentários APROVADOS</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody class="tbody">
+                                    @foreach (var item in listaAprovada)
+                                    {
+                                    <tr>
+                                        <td class="th_table">@item.Id </td>
+                                        <td class="th_table">@item.ClienteEmail</td>
+                                        <td class="th_table"> @item.Mensagem </td>
+                                    </tr>
+                                    }
+                                </tbody>
+                            </table>
+
+                            <table class="table_2">
+                                <thead class="thead">
+                                    <tr>
+                                        <th class="thThead">ID Comentário</th>
+                                        <th class="thThead">Email Usuário</th>
+                                        <th class="thThead">Comentários REPROVADOS</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody class="tbody">
+                                    @foreach (var item in listaReprovada)
+                                    {
+                                    <tr>
+                                        <td class="th_table">@item.Id </td>
+                                        <td class="th_table">@item.ClienteEmail</td>
+                                        <td class="th_table"> @item.Mensagem </td>
+                                    </tr>
+                                    }
+                                </tbody>
+                            </table>
+
+                            </article>
+
+                            <section class="section_coments">
+                                <div class="div_circle">
+                                    <h3 class="h3_count">Comentários Reprovados</h3>
+                                    <div class="circulo">@lsReprovCount</div>
+                                </div>
+
+                                <div class="div_circle">
+                                    <h3 class="h3_count">Comentários Aprovados</h3>
+                                    <div class="circulo">@lsAprovCount</div>
+
+                                </div>
+
+                                <div class="div_circle">
+                                    <h3 class="h3_count">Comentários Não Filtrados</h3>
+                                    <div class="circulo">@lsGeralCount</div>
+                                </div>
+                            </section>
+                        </section>
+
+                    </section>
+
+                    <section class="back">
+                        <h2 class="h2_table_user"> Gerenciamento de Usuários Cadastrados</h2>
+                        <table class="table">
+                            <thead class="thead">
+                                <tr>
+                                    <th class="thThead">ID </th>
+                                    <th class="thThead">Nome </th>
+                                    <th class="thThead">CPF </th>
+                                    <th class="thThead">Email </th>
+                                    <th class="thThead">Senha </th>
+                                    <th class="thThead">Telefone </th>
+                                </tr>
+                            </thead>
+                            <tbody class="tbody">
+                                @foreach (var item in listaCliente)
+                                {
+                                <tr>
+                                    <td class="th_table">@item.Id </td>
+                                    <td class="th_table">@item.Nome</td>
+                                    <td class="th_table">@item.Cpf</td>
+                                    <td class="th_table">@item.Email</td>
+                                    <td class="th_table">@item.Senha</td>
+                                    <td class="th_table">@item.Telefone</td>
+                                </tr>
+                                }
+                            </tbody>
+                        </table>
+
+                        <h2 class="h2_table_user"> Gerenciamento de Compra dos Softwares</h2>
+                        <table class="table">
+                            <thead class="thead">
+                                <tr>
+                                    <th class="thThead">ID Usuário</th>
+                                    <th class="thThead">Email Usuário </th>
+                                    <th class="thThead">Preço do Plano </th>
+                                    <th class="thThead">Forma De Pagamento</th>
+                                </tr>
+                            </thead>
+                            <tbody class="tbody">
+                                @foreach (var item in listaPlano)
+                                {
+                                <tr>
+                                    <td class="th_table">@item.Id </td>
+                                    <td class="th_table">@item.EmailCliente</td>
+                                    <td class="th_table">@item.Preco</td>
+                                    <td class="th_table">@item.FormaDePagamento</td>
+                                </tr>
+                                }
+                            </tbody>
+                        </table>
+                        
+                        <div class="flex">
+                            <div class="div_circle_2">
+                                <h3 class="h3_count">Usuários Cadastrados</h3>
+                                <div class="circulo_user">@lsClienteCount</div>
+                            </div>
+
+                            <div class="div_circle_2">
+                                <h3 class="h3_count">Vendas Realizadas</h3>
+                                <div class="circulo_user">@lsPlanoCount</div>
+                            </div>
+                        </div>
+                    </section>
+                </main>

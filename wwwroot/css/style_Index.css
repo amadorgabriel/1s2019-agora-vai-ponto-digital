@@ -1,0 +1,351 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* html{
+    scroll-behavior: smooth;
+} */
+
+
+/* INICIO MENU */
+
+.dropdown ul {
+    display: flex;
+    /* FALTA A COR E FAMILIA DA FONTE! */
+    font-family: 'Russo One', sans-serif;
+    justify-content: space-evenly;
+    background-color: #394B80;
+    padding: 1em;
+}
+
+nav{
+    width: 100%;
+    position: fixed;
+}
+
+nav a{
+    padding: 1em 4em;
+    color: rgb(207, 133, 63);
+}
+nav a:hover{
+    color: rgb(207, 133, 63);
+    background-color: #0F2461;
+}
+.area_busca{
+    padding:4em 1em 1em 1em;
+    background-color: rgb(97, 110, 148);
+}
+.area_busca form{
+    display: flex;
+    justify-content: center;
+}
+#search_buscar {
+    border-radius: 0.5em;
+    height: 35px;
+    width: 35%;
+    background-color: #ccc;
+}
+#btn_buscar {
+    border-radius: 1em;
+    height: 35px;
+    width: 2%;
+    padding: 0.2em;
+    border: none;
+}
+
+/* INICIO HEADER LOGO E BACKGROUND */
+
+h1{
+    display: none;
+}
+
+.area_logo{
+    height: 600px;
+    background-image: url(/Imagens/fundo_home.png);
+    background-position-y: 80%;
+    background-position-x: center;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#logo_img{
+    display: flex;
+    align-items: center;
+    width: 22%;
+    height: 380px;
+}
+.area_logo > div{
+    height: 600px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+/*AREA GERENCIE SEU GND FUTURO*/
+
+#area_planos{
+    background-color: #B9CAFA;
+    height: 86vh;
+}
+
+#area_planos h2{
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+    text-align: center;
+    font-family: 'Russo One', sans-serif;
+    padding: 1.65em;
+}
+
+.div_planos{
+    display: flex;
+    justify-content: center;
+}
+
+#img{
+    border: #000;
+    box-shadow: 1px 1px 1px 1px #000;
+    border-radius: 0.5em;
+    margin: 2em 2em 0.5em 2em;
+    height: 300px;
+} 
+
+#img:hover{
+    height: 350px; 
+}
+
+.div_planos h3{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 3em;
+    color: #0F2461;
+    margin-bottom: 0.5em;
+}
+
+.txt_btn_plano_medio{
+    text-align: center;
+}
+
+.txt_btn_plano_medio p{
+    padding: 0em 0em 1em; 
+    font-size: 1.2em;
+}
+
+.txt_btn_plano_medio a{
+    font-size: 1.5em;
+    padding: 0.5em 5em;
+    border-radius: 0.5em;
+    background-color: #cccc66;
+    font-weight: bold;
+    color: #000;
+}
+
+.txt_btn_plano_medio a:hover{
+    background-color: #aaaa41;
+    color: rgb(10, 22, 56);
+}
+
+/*FIM DO DA SESSÃO 2 */
+
+
+#area_suporte{
+    background-color: #394B80;
+}
+
+#area_suporte h2{
+    display: flex;
+    padding: 1.2em;
+    font-family: 'Russo One', sans-serif;
+    justify-content: center;
+    font-size: 3em;
+    text-align: center;
+}
+
+.area_box_suporte{
+    display: flex;
+    justify-content: center;
+    padding: 1em 0em 2em 0em;
+    height: 45vh;
+    margin: 0em 0em 4em 0em;
+}
+
+.hover:hover{
+    background-color: #aaaa41;
+}
+
+.p_suporte{
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+
+#area_suporte h3{
+    display: flex;
+    font-family: 'Russo One', sans-serif;
+    text-align: center;
+    justify-content: space-around;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #000033;
+    margin-bottom: 0.5em;
+}
+
+.box_suporte_home{
+    background-color: #6699cc;
+    border-radius: 10px;
+    max-width: 30%;
+}
+
+.box_suporte_home > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.box_suporte_home > div{
+    padding: 2em 2em 1em 2em;
+    max-width: 350px;
+}
+
+.box_baixa{
+    margin-top: 5em;
+}
+
+.btn_box a{
+    font-size: 1.5em;
+    padding: 0.5em 5em;
+    margin: 3em 0em;
+    border-radius: 0.5em;
+    font-weight: bold;
+    color: #000;
+}
+.box_suporte_home a{
+    display: flex;
+    justify-content: center;
+    font-size: 1.2em;
+    font-family: 'Russo One', sans-serif;
+    padding: 0.5em 0em;
+    border-radius: 0.5em;
+    background-color: #cccc66;
+    color: #000;
+}
+
+#NÃO-REMOVA{
+    margin-top: 1.5em;
+}
+
+.box_vantagens{
+    margin-bottom: 3%;
+    padding: 0;
+}
+
+.box_vantagens_txt h3{
+    min-width: 250px;
+    background-color: #cccc66;
+    box-shadow: 2px 2px 1px 1px #000;
+    padding: 0.2em 0em;
+    margin-bottom: 1em;
+}
+
+.box_reclame div >div{
+    display: flex;
+} 
+
+
+/* Comentários */
+#comentarios{
+    background-color: #7baff8;
+    align-items: center;
+    padding: 2em;
+}
+
+.msn{
+    text-align: left;
+    font-weight: bold;
+}
+.div{
+    color: #000;
+    font-size: 1.2em; 
+    padding: 1em;
+    border: #000;
+    border-radius: 1em;
+    background-color: #3c82e4;
+    margin: 1.5em 1.5em 0em 1.5em;
+}
+
+/*-------------------------------------------------------------------*/
+
+
+/* INICIO DO FOOTER */
+
+#footer_footer{
+    background-color: rgb(30, 46, 93);
+}
+.direitos{
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    background-color: rgb(0, 0, 0)
+}
+
+#footer{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2em;
+}
+
+#footer_footer p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.box_footer{
+    max-width: 25%;
+}
+
+.box_footer h4{
+    text-align: center;
+    justify-content: space-around;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #000;
+    margin-bottom: 0.5em;
+}
+
+.div_contato_icon div{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#logo_senai{
+    padding-top: 1em;
+    max-width: 180px;
+    height: 70px;
+    width: 100%;
+}
+
+#footer{
+    margin: 0em 0.5em;
+}
+#icon{
+    max-width: 70px;
+    width: 90%;
+    height: 60px
+}
+
+.justificado{
+    text-align: center;
+}
+
+
+  
+
+
+
+
+

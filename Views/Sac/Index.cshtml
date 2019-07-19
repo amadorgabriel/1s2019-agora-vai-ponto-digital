@@ -1,0 +1,142 @@
+@{
+Layout = "_Layout";
+}
+<header>
+    @{
+    Html.RenderPartial("_HeaderNavBar");
+    }
+</header>
+<main>
+    <section id="perguntas_frequentes">
+        <section id="contate-nos">
+            <h2 class="h2_contato">Contate-nos</h2>
+            <div class="fundo_contato">
+                <form method="POST" action='@Url.Action("Contatar","Sac")'>
+                    <input class="fundo_azul_form" type="text" name="nome" placeholder="Digite seu nome" required>
+                    <br />
+                    <input class="fundo_azul_form" type="email" name="email" placeholder="Digite seu E-mail*" required>
+                    <br />
+                    <input class="fundo_azul_form" type="text" name="ass" placeholder="Digite o assunto*" required>
+                    <br />
+                    <textarea class="fundo_azul_form_text" name="problem" placeholder="Qual seu problema?*" required></textarea>
+                    <br />
+                    <input id="enviar_btn_com" type="submit" onclick="Fctn()" value="Enviar">
+                </form>
+                    <script>
+                        function Fctn(){
+                        alert("Depois de preencher os dados corretamente\nentraremos em contato");
+                        }
+                    </script>
+                    
+            </div>
+        </section>
+
+
+        <section>
+            <div>
+                <h2 class="_h2">Perguntas Frequentes</h2>
+            </div>
+            <div id="seção_1">
+                <article class="area_perguntas">
+                    <!-- <div>
+                        <div>
+                            <a href="#">
+                                <h3 class="h3">Como eu acesso os softwares?</h3>
+                            </a>
+                        </div>
+                        <p class="txt_perguntas">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+                            molestias nulla assumenda eius
+                            quos dicta consequatur soluta magnam fugiat deserunt iste culpa at, rerum impedit
+                            libero
+                            beatae, aperiam consequuntur perferendis.
+                        </p>
+                    </div> -->
+
+                    <div>
+                        <a href="#">
+                            <h3 class="h3">Onde entro para experientar os dias de testes gratuitos?</h3>
+                        </a>
+                        <!-- <span>V</span> -->
+                        <p class="txt_perguntas">Com toda sinceridade, "A vida não é fácil, por favor proucure" caso não encontre 70 novamente.</p>
+                    </div>
+
+                    <div>
+                        <a href="#">
+                            <h3 class="h3">Quais são os procedimentos quando deseja-se acessar o contato online?
+                            </h3>
+                        </a>
+                        <p class="txt_perguntas">
+                            Nesta situação, Nessa aba aberta agora mesmo mande-nos um email e entraremos em contato o gmail se encontra
+                            no rodpé do site.
+                        </p>
+                    </div>
+
+                    <!-- <div>
+                        <a href="#">
+                            <h3 class="h3">Onde eu acesso o contato no site?</h3>
+                        </a>
+                         <p class="txt_perguntas">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+                            molestias nulla assumenda eius
+                            quos dicta consequatur soluta magnam fugiat deserunt iste culpa at, rerum impedit
+                            libero
+                            beatae, aperiam consequuntur perferendis.
+                        </p>
+                    </div> -->
+
+                    <div>
+                        <a href="#">
+                            <h3 class="h3">Ponto Digital é o nome da empresa?</h3>
+                        </a>
+                        <!-- <span>V</span> -->
+                        <p class="txt_perguntas">
+                            Não! Muita das vezes essa dúvida surge, porém, o nome se refere ao software que a página está promovendo
+                            o nome da empresa é PONTO DIGITAL, tudo uma questão de marketing cara. 
+                        </p>
+                    </div>
+
+                    <div>
+                        <a href="#">
+                            <h3 class="h3">Vale a pena comprar o software Ponto Digital?</h3>
+                        </a>
+                        <!-- <span>V</span> -->
+                        <p class="txt_perguntas">
+                            É claro que sim, pense comigo, "Vale a pena não comprar o software Ponto Digital?", se a resosta for não Compre,
+                            caso for sim hasuhauhsa COMPRE também.
+                        </p>
+                    </div>
+
+                    <div>
+                        <a href="#">
+                            <h3 class="h3">Quais tipos de softwares a Agora Vai vende?</h3>
+                        </a>
+                        <!-- <span>V</span> -->
+                        <p class="txt_perguntas">
+                            Softwares em geral, mas principalmente aqueles usados em máquinas tecnológicas chamadas notebook, computadores, celulares etc.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="avalie_serviços">
+                    <div>
+
+                        <h2 class="tit_serviços">Avalie nossos serviços</h2>
+                        <p>
+                            É muito importante enviar feedbacks para empresa, assim sabendo ou não da satisfação do cliente podemos 
+                            nos adaptar para sua melhor experiência. Que tal nos avaliar e comentar acerca de nossos produtos?
+                        </p>
+
+
+                        <img src="Imagens/avaliações-5-estrelas.png"
+                            alt="Imagem representativa de votação em cinco estrelas" height="150px" width="35%">
+                    </div>
+                    <!--COLUCAR FORM DE AVALIAÇÃO-->
+
+                </article>
+            </div>
+
+
+
+        </section>
+
+    </section>
+</main>

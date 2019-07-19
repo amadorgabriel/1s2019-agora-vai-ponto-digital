@@ -1,0 +1,74 @@
+@{
+    Layout="_Layout";
+}
+<header>
+    @{
+        Html.RenderPartial("_HeaderNavBar");
+    }
+</header>
+<main>
+    <section id="main_cadastro">
+
+        <div id="cadastrar">
+            <h3>Quero me cadastrar!</h3>
+
+            <form action='@Url.Action("Cadastrar","Login")' method="POST">
+                <input class="input" type="text" name="nome"  placeholder="Digite o nome da empresa ou usuário" required>
+                <br />
+                <input class="input" type="text" name="cpf" placeholder="Digite sei CPF (apenas os números)" required>
+                <br />
+                <input class="input" type="email" name="email" placeholder="Digite seu e-mail" required>
+                <br />
+                <input class="input" type="tel" name="telefone" placeholder="Digite o número do seu celular ou telefone" required>
+                <br />
+                <input class="input" type="password" name="senha" placeholder="Digite sua senha" required>
+                <br />
+                <input class="input_submit_checkbox" name="termos_de_uso" type="checkbox" required>
+                <label for="termos_de_uso"> Li e concordo com os Termos Acima </a></label>
+                <br />
+                <input class="input_submit" type="submit" value="Gravar meu Cadastro">
+                <!--APÓS O CADASTRO DO USUÁRIO ELE TEM QUE RECEBER A CHAVE DO PRODUTO, OU POR EMAIL OU NA TELA OU SLA-->
+            </form>
+        </div>
+
+        <!-- <article id="caixa_pós_cadastro">
+           DEFINIR ESSA CAIXA PARA SE ABRIR COMO POP-UP-
+            <div>
+                <div>
+                    <h2>Obrigado por se cadastrar!</h2>
+                </div>
+                <div>
+                    <span>Botão X</span>
+                </div>
+            </div>
+            <div>
+                <p>
+                    Nota: Enviamos a chave do produto ao seu E-mail, agora
+                    <br />
+                    você pode comprar nossos softwares, comentar e avaliar nossos produtos.
+                </p>
+            </div>
+        </article> -->
+
+        <div id="linha_vertical"> . </div>
+        <!--Linha Horizontal Preta-->
+
+        <div id="logar">
+            <h3>Já sou cadatrado!</h3>
+            <div>
+                <form action='@Url.Action("Logar","Login")' method="POST">
+                    <input class="input" type="email" name="email" placeholder="Digite seu Email" required>
+                    <br />
+                    <input class="input" type="password" name="senha" placeholder="Digite sua Senha" required>
+                    <br />
+                    <br />
+                    <input class="input_submit" type="submit" value="Fazer login">
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+</main>
+ 
+

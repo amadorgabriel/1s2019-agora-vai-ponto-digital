@@ -1,0 +1,45 @@
+@{
+    var user = (string) ViewData["UserLogado"];
+}
+<nav id="nav">
+    <div class="dropdown">
+        <ul>
+            <li><a href='@Url.Action("Index", "Home")'  >Home</a></li>
+            <li><a href='@Url.Action("Index", "Planos")' >Planos e Produtos</a></li>
+            <li><a href='@Url.Action("Index", "Historia")'>História e Sede</a></li>
+            @if("admin@agoravai.com".Equals(user)){
+                <li><a href='@Url.Action("Index", "Dashboard")' >Dashboard</a></li>
+            
+            }
+            <li><a href='@Url.Action("Index", "Sac")'>Sac</a></li>
+            @if(string.IsNullOrEmpty (user))
+            {
+               
+                <li><a href='@Url.Action("Index", "Login")'>Login e Cadastro</a></li>
+            }else{
+               
+                <li><a href='@Url.Action("Index", "Avaliacao")'>Avalie-nos</a></li>
+                <li><a href='@Url.Action("Deslogar", "Login")' >Logout</a></li>
+            }
+        </ul>
+    </div>
+</nav>
+<div class="area_busca">
+    <form method="POST" action='@Url.Action("Index","Pesquisa")'>
+        <input type="search" list="valores" name="pesquisa"  id="search_buscar" placeholder="Digite o que proucura..">
+        <input type="image" id="btn_buscar" src="~/Imagens/logo_lupa.png" alt="Buscar">
+
+        <datalist id="valores">
+            <option value="Home"></option>
+            <option value="Planos"></option>
+            <option value="Historia"></option>
+            <option value="Sac"></option>
+            <option value="Login"></option>
+            <option value="Cadastro"></option>
+            <option value="Avaliacao"></option>
+            <option value="Perguntas Frequêntes"></option>
+            <option value="Teste Gratuito"></option>
+            <option value="Comentários"></option>
+        </datalist>
+    </form>
+</div>

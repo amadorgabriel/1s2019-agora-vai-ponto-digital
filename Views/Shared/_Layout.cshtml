@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    @if( "Home".Equals((string) ViewData["Titulo"] ) ){
+    <link href="css/style_Index.css" rel="stylesheet" type="text/css">
+    }else if("Planos e Produtos".Equals((string) ViewData["Titulo"])){
+    <link rel="stylesheet" href="~/css/style_planos.css" type="text/css">
+    }else if("Historia e Sede".Equals((string) ViewData["Titulo"] ) ){
+    <link rel="stylesheet" href="~/css/style_historia.css" type="text/css">
+    }else if("Login ou Cadastro".Equals((string) ViewData["Titulo"] ) ){
+    <link rel="stylesheet" href="~/css/style_cadastro.css" type="text/css">
+    }else if("Avaliações".Equals((string) ViewData["Titulo"] )){
+    <link rel="stylesheet" href="~/css/style_cadastro.css" type="text/css">
+    }else if("Cadastro Bem Sucedido".Equals((string) ViewData["Titulo"] ) ){
+    <link rel="stylesheet" href="~/css/style_planos.css" type="text/css">
+    }else if("Erro".Equals((string) ViewData["Titulo"] )){
+    <link rel="stylesheet" href="~/css/style_cadastro.css" type="text/css">
+    }else if("ErroLogin".Equals((string) ViewData["ErroData"] )){
+    <link rel="stylesheet" href="~/css/style_cadastro.css" type="text/css">
+    }else if("Dasboard Administrador".Equals((string) ViewData["Titulo"]) ){
+    <link rel="stylesheet" href="~/css/style_cadastro.css" type="text/css">
+    }else{ 
+    <link rel="stylesheet" href="~/css/style_sac.css" type="text/css">
+    }
+
+    <link rel="icon" href="~/logos/favicon.png" />
+    <link href="https://fonts.googleapis.com/css?family=Russo+One&display=swap" rel="stylesheet">
+    <title> @ViewData["Titulo"] - Agora Vai!</title>
+</head>
+
+<body>
+    @RenderBody()
+
+    <footer id="footer_footer">
+        <div id="footer">
+            <div class="box_footer">
+                <div>
+                    <a href='@Url.Action("Index", "Planos")'>
+                        <h4>Planos</h4>
+                    </a>
+                </div>
+                <div>
+                    <p class="justificado">
+                        A empresa possui planos especificos para
+                        <br />
+                        o Ponto Digital, visando favorecer o cliente
+                        <br />
+                        e a empresa assim foi estabelecido quatro
+                        <br />
+                        planos para todo o tipo de porte confira!
+                    </p>
+                </div>
+            </div>
+
+            <div class="box_footer">
+                <a href='@Url.Action("Index", "Sac")'>
+                    <h4>Suporte</h4>
+                </a>
+
+                <p class="justificado">
+                    Se houver alguma dúvida sobre fazer a
+                    <br />
+                    aquisição do produto, acontate nossa
+                    <br />
+                    equipe de suporte e tenha certeza ao
+                    <br />
+                    comprar nosso nosso produto, visite
+                    <br />
+                    também a História da e conheça a qualidade!
+                </p>
+            </div>
+
+            <div class="box_footer">
+                <h4>Parceria</h4>
+                <img src="~/Imagens/logo-senai.jpg" id="logo_senai" alt="Logo SENAI">
+            </div>
+
+            <div class="box_footer footer_contato">
+                <div>
+                    <h4>Contate-nos</h4>
+                </div>
+
+                <div class="div_contato_icon">
+                    <div>
+                        <a  href="https://www.facebook.com.br" target="_blank"> <img id="icon" src="~/Imagens/Icon_face.png"
+                                alt="Logo Facebook">
+                        </a>
+                        <a href="https://www.gmail.com.br"  target="_blank"><img id="icon" src="~/Imagens/Icon_gmail.png" alt="Logo Gmail"></a>
+                        <a href="https://www.twitter.com.br"  target="_blank" ><img id="icon" src="~/Imagens/Icon_twiter.png" alt="Logo Twitter"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p class="direitos"> Todos Direitos Reservados a Empresa Agora Vai
+            <br>
+            Site Desenvolvido pela empresa em parceria com gabrielramador2014@gmail.com , 2019
+        </p>
+    </footer>
+
+ 
+
+    @if("Erro".Equals((string) ViewData["Titulo"])){
+        <script>
+            alert("Usuário Não Cadastrado, Email ou senha já existentes!");   
+        </script>
+    }
+
+    @if("ErroLogin".Equals((string) ViewData["ErroData"])){
+            <script>
+                alert("Usuário ou Senha Incompatíveis!");
+            </script>
+    }
+    
+    @if("Planos e Produtos".Equals((string) ViewData["Titulo"] )){
+
+    <script>
+        $(function () {
+            var gnd = $("#plano_grande");
+            var pqn = $("#plano_pequeno");
+            var med = $("#area_boxs_planos");
+
+            var botao = $("#btn_grande");
+            botao.on("click", function () {
+
+                gnd.toggleClass("active");
+                pqn.toggleClass("disabled");
+                med.toggleClass("disabled");
+            });
+
+            var botao = $("#btn_pequeno");
+            botao.on("click", function () {
+                gnd.toggleClass("disabled");
+                pqn.toggleClass("active");
+                med.toggleClass("disabled");
+            });
+
+            var botao = $("#btn_medio");
+            botao.on("click", function () {
+                gnd.toggleClass("disabled");
+                pqn.toggleClass("disabled");
+                med.toggleClass("active");
+            });
+        });
+    </script>
+
+    <script>
+        function btn_grande() {
+            var m = document.getElementById("plano_grande"); //id section planos
+            if (m.style.display == "none") { //se for clicado no "on.click"
+                m.style.display = "flex";
+            } else {
+                m.style.display = "none";
+            }
+        }
+
+        function btn_pequeno() {
+            var m = document.getElementById("plano_pequeno"); //id section planos
+            if (m.style.display == "none") { //se for clicado no "on.click"
+                m.style.display = "flex";
+            } else {
+                m.style.display = "none";
+            }
+        }
+
+        function btn_medio() {
+            var m = document.getElementById("area_boxs_planos"); //id section planos
+            if (m.style.display == "none") { //se for clicado no "on.click"
+                m.style.display = "flex";
+            } else {
+                m.style.display = "none";
+            }
+        }
+    </script>
+    }
+    
+   
+    </body>
+
+</html>

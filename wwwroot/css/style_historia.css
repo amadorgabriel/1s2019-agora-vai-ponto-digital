@@ -1,0 +1,760 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+
+}
+/* INICIO MENU */
+
+.dropdown ul {
+    display: flex;
+    /* FALTA A COR E FAMILIA DA FONTE! */
+    font-family: 'Russo One', sans-serif;
+    justify-content: space-evenly;
+    background-color: #394B80;
+    padding: 1em;
+}
+
+nav{
+    width: 100%;
+    position: fixed;
+}
+
+nav a{
+    padding: 1em 4em;
+    color: rgb(207, 133, 63);
+}
+nav a:hover{
+    color: rgb(207, 133, 63);
+    background-color: #0F2461;
+}
+.area_busca{
+    padding:4em 1em 1em 1em;
+    background-color: rgb(97, 110, 148);
+}
+.area_busca form{
+    display: flex;
+    justify-content: center;
+}
+#search_buscar {
+    border-radius: 0.5em;
+    height: 35px;
+    width: 35%;
+    background-color: #ccc;
+}
+#btn_buscar {
+    border-radius: 1em;
+    height: 35px;
+    width: 2%;
+    padding: 0.2em;
+    border: none;
+}
+
+
+ /* FIM DA NAV */
+
+
+#topo_historia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+    background-image: url("../Imagens/Fundo_história.png");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position-x: center;
+    background-position-y: -50px;
+}
+
+#topo_historia div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2em;
+    background-color: #cccc66;
+    max-height: 40%;
+    font-size: 1.2em;
+}
+
+#topo_historia h2{
+    font-family: 'Russo One', sans-serif;
+    padding-bottom: 1em;
+    font-size: 1.85em;
+} 
+
+/*--------FIM DO HEADER--------*/
+
+.h3{
+    text-align: center;
+    justify-content: center;
+    font-family: 'Russo One', sans-serif;
+    margin: 2% 0%;
+    font-size: 2em;
+}
+
+.linha_vertical{
+    position: absolute;
+    margin: 0% 40%;
+    width: 20%;
+    height: 5px;
+    background-color: #000;
+}
+
+.lado_claro{
+    background-color: #7396FF; 
+    width: 50%;
+    font-size: 1.2em;
+    height: 500px;
+}
+
+.lado_escuro{
+    background-color: #1F4ACC;
+    width: 50%;
+    font-size: 1.2em;
+}
+
+.lado_claro p {
+    text-align: center;
+}
+
+.lado_escuro p {
+    text-align: center;
+}
+
+#quem_somos{
+    display: flex;
+}
+
+.imagem_quem_somos {
+    display: flex;
+    justify-content: center;
+    padding: 2% 0%;
+}
+
+.imagem_quem_somos > div{
+    width: 50%;
+}
+.div_1{
+    padding-top: 2em;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0em 2em;;
+}
+
+.div_2{
+    display: flex;
+    justify-content: flex-end;
+    margin:  0em 2em;
+    padding-top: 2em;
+}
+
+#como_surgiu{
+    display: flex;
+}
+
+#como_surgiu > div img{
+    justify-content: center;
+    margin: 5% 15%;
+}
+
+#nossa_equipe{
+    display: flex;
+}
+
+.imgs_equipe {
+    display: flex;
+}
+
+#nossa_equipe > div img{
+    justify-content: center;
+    margin: 5% 5%;
+    border-radius: 5px;
+}
+
+
+/*--------INICIO DOS LOCAIS----------*/
+
+#sede{
+    display: flex;
+    justify-content: space-between;
+    padding: 3em 0em;
+    background-color: #394B80;
+}
+
+#sede h3{
+    text-align: center;
+    justify-content: center;
+    margin: 2% 0%;
+    font-family: 'Russo One', sans-serif;
+    font-size: 1.5em;
+    padding-bottom: 1.1em;
+}
+
+#img_sede{
+    margin: 0em 2em
+}
+
+.fundo_amarelo{
+    padding: 1.5em;
+    font-size: 1.3em;
+    background-color: #cccc66;
+    max-height: 300px;
+    width: 20%;
+}
+
+#maps{
+    display: flex;
+    justify-content: center;
+    padding: 2em 0em 2em 0em;
+    background-color: #99ccff;
+}
+
+/* INICIO DO FOOTER */
+
+#footer_footer{
+    background-color: rgb(30, 46, 93);
+}
+.direitos{
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    background-color: rgb(0, 0, 0)
+}
+
+#footer{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2em;
+}
+
+#footer_footer p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.box_footer{
+    max-width: 25%;
+}
+
+.box_footer h4{
+    text-align: center;
+    justify-content: space-around;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #000;
+    margin-bottom: 0.5em;
+}
+
+.div_contato_icon div{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#logo_senai{
+    padding-top: 1em;
+    max-width: 180px;
+    height: 70px;
+    width: 100%;
+}
+
+#footer{
+    margin: 0em 0.5em;
+}
+#icon{
+    max-width: 70px;
+    width: 90%;
+    height: 60px
+}
+
+.justificado{
+    text-align: center;
+}
+
+
+/* 
+@media(max-width: 1275px){
+
+    .btn_menu{
+        display: flex;
+        margin-top: -0.5em;
+        padding: 1.5em;
+    }
+    
+    #search_buscar{
+        height: 50px;
+        width: 400px;
+    }
+         
+    #btn_buscar{
+        height: 46px;
+        width: 130px;
+     }
+         
+    .login_cadastre-se a{
+        display: flex;
+        margin-top: 0.5em;
+        margin-right: 0.5em;
+        font-size: 20px;
+    }
+
+    .dropdown-content {
+        font-size: 1.8em;
+        min-width: 120px;
+        padding: 1em 2em;
+        margin: 0em 1.5em ; 
+    }
+    
+    #topo_historia{
+        height: 600px;
+        background-image: url("../Imagens/Fundo_história.png");
+        background-repeat: no-repeat;
+        background-size: cover; 
+        background-position-x: center;
+        background-position-y: -100px;
+    }
+
+    #quem_somos{
+        margin-top: -8em;
+    }
+
+    #img_quem_somos{
+        margin-top: 5em;
+    }
+
+    #img_como_surgiu{
+        padding-top: 4em;
+    }
+
+    .div_2{
+        padding-bottom: 2em;
+    }
+
+    .imgs_equipe{
+        padding-top: 5em;
+    }
+
+    .fundo_amarelo{
+        min-height: 300px;
+        max-height: 500px;
+    }
+
+     
+}
+    
+@media(max-width: 1000px){
+    
+    .btn_menu{
+        display: flex;
+        margin-top: -0.5em;
+        margin-left: 1em;
+        padding: 1.5em;
+    }
+    
+    .dropdown-content {
+        font-size: 1.5em;
+        min-width: 90px;
+        padding: 1em 1.5em;
+        margin: 0em 1em ;
+    }
+             
+    #search_buscar{
+        height: 35px;
+        width: 300px;
+    }
+             
+    #btn_buscar{
+        font-size: 1em;
+        height: 32px;
+        width: 90px;
+        }
+             
+    .login_cadastre-se a{
+        display: flex;
+        margin-top: 0.5em;
+        margin-right: 0.5em;
+        font-size: 18px;
+    }
+
+    .imgs_equipe{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imgs_equipe img{
+        width: 80%;
+        height: 300px;
+        margin-left:4em;
+    }
+    
+    #img_sede{
+        width: 80%;
+        margin-top: 6em;
+        height: 250px;
+        margin-left: 2em;
+    } */
+
+    /* .h3_amarelo{
+        font-size: 1em;
+    } 
+    
+
+    .fundo_amarelo{
+        box-sizing: content-box;
+        width: 50%;
+        min-height: 300px;
+        max-height: 600px;
+    }
+
+    #mapa{
+        height: 300px;
+        
+    }
+}
+ 
+    
+@media(max-width: 765px){
+
+    
+    .btn_menu{
+        display: flex;
+        margin-top: 0;
+        margin-left: 1em;
+        padding: 1em;
+    }
+         
+    #search_buscar{
+        height: 25px;
+        width: 200px;
+    }
+         
+    #btn_buscar{
+        font-size: 0.8em;
+        height: 20px;
+        width: 60px;
+     }
+         
+    .login_cadastre-se a{
+        display: flex;
+        margin-top: 0.5em;
+        margin-right: 0.5em;
+        font-size: 12px;
+    }
+    
+
+    #icon{
+        width: 30px;
+        height: 30px;
+    }
+    
+    #logo_senai{
+        height: 40px;
+        width: 90px;
+    }   
+        
+    .div_2{
+        padding-bottom: 2em;
+    }
+    
+    #topo_historia{
+        height: 400px;;
+    }
+
+    #topo_historia div{
+        width: 50%;
+        max-height: 50%;
+        padding: 1em;
+        margin: 2% 0%;
+    }
+
+    #topo_historia h2{
+        font-size: 1.5em;
+        margin-bottom: 4%;
+    }
+
+    #topo_historia p{
+        font-size: 0.8em;
+    }
+
+    #img_quem_somos{
+        margin-top: 3em;
+        height: 300px;
+    }
+
+    .div_2_quemsomos{
+        position: relative;
+        width: 170%;
+        margin: 1.5em -1em 1.5em 3em ;
+    }
+
+
+    .h3{
+        margin-top: 0.5em;
+        font-size: 1.5em;
+    }
+
+    #img_como_surgiu{
+        padding-top: 3em;
+        margin-top: 3em;
+        height: 300px;
+    }
+
+    .div_2_comosurgiu{
+        position: relative;
+        width: 150%;
+        margin: 1.5em 2em 1.5em -12em ;
+
+    }
+
+    .imgs_equipe{
+        padding-top: 5em;
+    }
+
+    .fundo_amarelo{
+        min-height: 300px;
+        max-height: 500px;
+    }
+
+    #sede{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fundo_amarelo{
+        padding: 1em;
+        max-height: 500px;
+        min-height: 300px;
+        width: 80%;
+        margin: 0em 0em 0em 1em;   
+        margin-left: 1em;
+    }
+
+    #img_sede{
+        width: 87%;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        height: 250px;
+        margin-left: 1em;
+        margin-right: 0.5em;
+    }
+
+    .h3_amarelo{
+        font-size: 1.5em;
+    }
+}
+    
+@media (max-width: 480px){
+    
+    .btn_menu{
+        display: flex;
+        margin-top: 0;
+        margin-left: 0.5em;
+        padding: 0.5em;
+    }
+
+    .dropdown-content {
+        font-size: 1em;
+        min-width: 70px;
+        padding: 1em 1em;
+        margin: 0em 1em ;
+    }
+         
+    #search_buscar{
+        height: 15px;
+        width: 80%;
+    }
+         
+    #btn_buscar{
+        font-size: 0.7em;
+        height: 15px;
+        width: 15%;
+    }
+         
+    .login_cadastre-se a{
+        display: flex;
+        margin-top: 0.5em;
+        margin-right: 0.5em;
+        font-size: 8px;
+    }
+
+    .direitos{
+        font-size: 0.4em;
+    }
+
+    /*-------------
+    
+    #topo_historia{
+        height: 400px;;
+    }
+    
+    #topo_historia div{
+        width: 50%;
+        max-height: 30%;
+        padding: 1em;
+        margin: 25% 0%;
+    }
+
+    #topo_historia h2{
+        font-size: 1em;
+        margin-bottom: 4%;
+    }
+
+    #topo_historia p{
+        font-size: 0.5em;
+    }
+
+    .h3{
+        position: absolute;
+        margin-top: 0.5em;
+        margin-left: 1.5em;
+        font-size: 1em;
+    }
+
+    #img_quem_somos{
+        position: relative;
+        margin-top: 42em;
+        margin-left: -8em;
+        height: 200px;
+        width: 150%;
+        margin-bottom: 2em;
+    }
+    .txt{
+        margin-top: 2em;
+    }
+
+    .div_1_quemsomos{
+        position: relative;
+        width: 170%;
+        font-size: 1em;
+        margin: 1.5em -1em 0.5em 1em ;
+    }
+
+    .div_2_quemsomos{
+        font-size: 1em;
+        position: relative;
+        width: 170%;
+        margin: 1em -1em 1.5em 1em ;
+    }
+
+    
+    .div_2{
+        padding-bottom: 2em;
+    }
+
+
+    #img_como_surgiu{
+        position: absolute;
+        margin-left: 1em;
+        height: 200px;
+        width: 80%;
+    }
+
+    .div_1_comosurgiu{
+        position: relative;
+        width: 170%;
+        font-size: 1em;
+        margin: 18em -1em 0.5em -6em ;
+
+    }
+    
+    .div_2_comosurgiu{
+        font-size: 1em;
+        position: relative;
+        width: 170%;
+        margin: 1em -1em 1.5em -6em ;
+    }
+
+
+
+
+    /*PAREI AQUI -----------------------
+
+    
+    .imgs_equipe{
+        padding-top: 2em;
+        /* margin-left: -8em; 
+    }
+    
+    
+    
+    .div_1_nossaequipe{
+        position: relative;
+        width: 170%;
+        font-size: 1em;
+        margin: 20em 0em 0.5em  2em ;
+        
+    }
+    .div_2_nossaequipe{
+        position: relative;
+        width: 170%;
+        font-size: 1em;
+        margin: 20em 0em 0.5em  2em ;
+        
+    }
+    
+    .img_equipe_1{
+        position: absolute;
+        padding-top: -5em;
+        margin: -2em -8em 0em -2em;
+        height: 200px;
+        width: 80%;
+    }
+
+    .img_equipe_2{
+        position: absolute;
+        padding-top: 38em;
+        margin-left: 1em;
+        height: 200px;
+        width: 80%;
+    }
+
+
+
+
+
+    
+    .fundo_amarelo{
+        min-height: 300px;
+        max-height: 500px;
+    }
+    
+    #sede{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .fundo_amarelo{
+        padding: 1em;
+        max-height: 500px;
+        min-height: 300px;
+        width: 80%;
+        margin: 0em 0em 0em 1em;   
+        margin-left: 1em;
+    }
+    
+    #img_sede{
+        width: 87%;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        height: 250px;
+        margin-left: 1em;
+        margin-right: 0.5em;
+    }
+    
+    .h3_amarelo{
+        font-size: 1.5em;
+    }
+
+}
+
+
+    
+
+    
+    
+    
+
+
+ 

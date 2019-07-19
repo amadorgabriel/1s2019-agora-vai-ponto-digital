@@ -1,0 +1,64 @@
+C:\Users\44680781890\Documents\Gabriel Rodrigues Amador - Tarde -Dev. Sist\Sprint 5\WebMVC-Projetos\AgoraVai PontoDigital\bin\Debug\netcoreapp2.2\AgoraVai PontoDigital.deps.json
+C:\Users\44680781890\Documents\Gabriel Rodrigues Amador - Tarde -Dev. Sist\Sprint 5\WebMVC-Projetos\AgoraVai PontoDigital\bin\Debug\netcoreapp2.2\AgoraVai PontoDigital.runtimeconfig.json
+C:\Users\44680781890\Documents\Gabriel Rodrigues Amador - Tarde -Dev. Sist\Sprint 5\WebMVC-Projetos\AgoraVai PontoDigital\bin\Debug\netcoreapp2.2\AgoraVai PontoDigital.runtimeconfig.dev.json
+C:\Users\44680781890\Documents\Gabriel Rodrigues Amador - Tarde -Dev. Sist\Sprint 5\WebMVC-Projetos\AgoraVai PontoDigital\bin\Debug\netcoreapp2.2\AgoraVai PontoDigital.dll
+C:\Users\44680781890\Documents\Gabriel Rodrigues Amador - Tarde -Dev. Sist\Sprint 5\WebMVC-Projetos\AgoraVai PontoDigital\bin\Debug\netcoreapp2.2\AgoraVai PontoDigital.pdb
+C:\Users\44680781890\Documents\Gabriel Rodrigues Amador - Tarde -Dev. Sist\Sprint 5\WebMVC-Projetos\AgoraVai PontoDigital\bin\Debug\netcoreapp2.2\AgoraVai PontoDigital.Views.dll
+C:\Users\44680781890\Documents\Gabriel Rodrigues Amador - Tarde -Dev. Sist\Sprint 5\WebMVC-Projetos\AgoraVai PontoDigital\bin\Debug\netcoreapp2.2\AgoraVai PontoDigital.Views.pdb
+C:\Users\44680781890\Documents\Gabriel Rodrigues Amador - Tarde -Dev. Sist\Sprint 5\WebMVC-Projetos\AgoraVai PontoDigital\obj\Debug\netcoreapp2.2\AgoraVai PontoDigital.csprojAssemblyReference.cache
+C:\Users\44680781890\Documents\Gabriel Rodrigues Amador - Tarde -Dev. Sist\Sprint 5\WebMVC-Projetos\AgoraVai PontoDigital\obj\Debug\netcoreapp2.2\AgoraVai PontoDigital.csproj.CoreCompileInputs.cache
+C:\Users\44680781890\Documents\Gabriel Rodrigues Amador - Tarde -Dev. Sist\Sprint 5\WebMVC-Projetos\AgoraVai PontoDigital\obj\Debug\netcoreapp2.2\AgoraVai PontoDigital.RazorAssemblyInfo.cache
+C:\Users\44680781890\Documents\Gabriel Rodrigues Amador - Tarde -Dev. Sist\Sprint 5\WebMVC-Projetos\AgoraVai PontoDigital\obj\Debug\netcoreapp2.2\AgoraVai PontoDigital.RazorAssemblyInfo.cs
+C:\Users\44680781890\Documents\Gabriel Rodrigues Amador - Tarde -Dev. Sist\Sprint 5\WebMVC-Projetos\AgoraVai PontoDigital\obj\Debug\netcoreapp2.2\AgoraVai PontoDigital.AssemblyInfoInputs.cache
+C:\Users\44680781890\Documents\Gabriel Rodrigues Amador - Tarde -Dev. Sist\Sprint 5\WebMVC-Projetos\AgoraVai PontoDigital\obj\Debug\netcoreapp2.2\AgoraVai PontoDigital.AssemblyInfo.cs
+C:\Users\44680781890\Documents\Gabriel Rodrigues Amador - Tarde -Dev. Sist\Sprint 5\WebMVC-Projetos\AgoraVai PontoDigital\obj\Debug\netcoreapp2.2\AgoraVai PontoDigital.TagHelpers.input.cache
+C:\Users\44680781890\Documents\Gabriel Rodrigues Amador - Tarde -Dev. Sist\Sprint 5\WebMVC-Projetos\AgoraVai PontoDigital\obj\Debug\netcoreapp2.2\AgoraVai PontoDigital.TagHelpers.output.cache
+C:\Users\44680781890\Documents\Gabriel Rodrigues Amador - Tarde -Dev. Sist\Sprint 5\WebMVC-Projetos\AgoraVai PontoDigital\obj\Debug\netcoreapp2.2\AgoraVai PontoDigital.RazorCoreGenerate.cache
+C:\Users\44680781890\Documents\Gabriel Rodrigues Amador - Tarde -Dev. Sist\Sprint 5\WebMVC-Projetos\AgoraVai PontoDigital\obj\Debug\netcoreapp2.2\Razor\Views\Avaliacao\Index.g.cshtml.cs
+C:\Users\44680781890\Documents\Gabriel Rodrigues Amador - Tarde -Dev. Sist\Sprint 5\WebMVC-Projetos\AgoraVai PontoDigital\obj\Debug\netcoreapp2.2\Razor\Views\DashBoard\Index.g.cshtml.cs
+C:\Users\44680781890\Documents\Gabriel Rodrigues Amador - Tarde -Dev. Sist\Sprint 5\WebMVC-Projetos\AgoraVai PontoDigital\obj\Debug\netcoreapp2.2\Razor\Views\Historia\Index.g.cshtml.cs
+C:\Users\44680781890\Documents\Gabriel Rodrigues Amador - Tarde -Dev. Sist\Sprint 5\WebMVC-Projetos\AgoraVai PontoDigital\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\44680781890\Documents\Gabriel Rodrigues Amador - Tarde -Dev. Sist\Sprint 5\WebMVC-Projetos\AgoraVai PontoDigital\obj\Debug\netcoreapp2.2\Razor\Views\Login\Cadastrado.g.cshtml.cs
+C:\Users\44680781890\Documents\Gabriel Rodrigues Amador - Tarde -Dev. Sist\Sprint 5\WebMVC-Projetos\AgoraVai PontoDigital\obj\Debug\netcoreapp2.2\Razor\Views\Login\Index.g.cshtml.cs
+C:\Users\44680781890\Documents\Gabriel Rodrigues Amador - Tarde -Dev. Sist\Sprint 5\WebMVC-Projetos\AgoraVai PontoDigital\obj\Debug\netcoreapp2.2\Razor\Views\Planos\Index.g.cshtml.cs
+C:\Users\44680781890\Documents\Gabriel Rodrigues Amador - Tarde -Dev. Sist\Sprint 5\WebMVC-Projetos\AgoraVai PontoDigital\obj\Debug\netcoreapp2.2\Razor\Views\Sac\Index.g.cshtml.cs
+C:\Users\44680781890\Documents\Gabriel Rodrigues Amador - Tarde -Dev. Sist\Sprint 5\WebMVC-Projetos\AgoraVai PontoDigital\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_HeaderNavBar.g.cshtml.cs
+C:\Users\44680781890\Documents\Gabriel Rodrigues Amador - Tarde -Dev. Sist\Sprint 5\WebMVC-Projetos\AgoraVai PontoDigital\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\44680781890\Documents\Gabriel Rodrigues Amador - Tarde -Dev. Sist\Sprint 5\WebMVC-Projetos\AgoraVai PontoDigital\obj\Debug\netcoreapp2.2\AgoraVai PontoDigital.RazorTargetAssemblyInfo.cache
+C:\Users\44680781890\Documents\Gabriel Rodrigues Amador - Tarde -Dev. Sist\Sprint 5\WebMVC-Projetos\AgoraVai PontoDigital\obj\Debug\netcoreapp2.2\AgoraVai PontoDigital.RazorTargetAssemblyInfo.cs
+C:\Users\44680781890\Documents\Gabriel Rodrigues Amador - Tarde -Dev. Sist\Sprint 5\WebMVC-Projetos\AgoraVai PontoDigital\obj\Debug\netcoreapp2.2\AgoraVai PontoDigital.Views.pdb
+C:\Users\44680781890\Documents\Gabriel Rodrigues Amador - Tarde -Dev. Sist\Sprint 5\WebMVC-Projetos\AgoraVai PontoDigital\obj\Debug\netcoreapp2.2\AgoraVai PontoDigital.dll
+C:\Users\44680781890\Documents\Gabriel Rodrigues Amador - Tarde -Dev. Sist\Sprint 5\WebMVC-Projetos\AgoraVai PontoDigital\obj\Debug\netcoreapp2.2\AgoraVai PontoDigital.pdb
+C:\Users\44680781890\Documents\Gabriel Rodrigues Amador - Tarde -Dev. Sist\Sprint 5\WebMVC-Projetos\AgoraVai PontoDigital\obj\Debug\netcoreapp2.2\AgoraVai PontoDigital.csproj.CopyComplete
+C:\Users\Family\Documents\Gabriel Rodrigues Amador\SENAI\PROJETOS\WebMVC-Projetos\AgoraVai PontoDigital\bin\Debug\netcoreapp2.2\AgoraVai PontoDigital.deps.json
+C:\Users\Family\Documents\Gabriel Rodrigues Amador\SENAI\PROJETOS\WebMVC-Projetos\AgoraVai PontoDigital\bin\Debug\netcoreapp2.2\AgoraVai PontoDigital.runtimeconfig.json
+C:\Users\Family\Documents\Gabriel Rodrigues Amador\SENAI\PROJETOS\WebMVC-Projetos\AgoraVai PontoDigital\bin\Debug\netcoreapp2.2\AgoraVai PontoDigital.runtimeconfig.dev.json
+C:\Users\Family\Documents\Gabriel Rodrigues Amador\SENAI\PROJETOS\WebMVC-Projetos\AgoraVai PontoDigital\bin\Debug\netcoreapp2.2\AgoraVai PontoDigital.dll
+C:\Users\Family\Documents\Gabriel Rodrigues Amador\SENAI\PROJETOS\WebMVC-Projetos\AgoraVai PontoDigital\bin\Debug\netcoreapp2.2\AgoraVai PontoDigital.pdb
+C:\Users\Family\Documents\Gabriel Rodrigues Amador\SENAI\PROJETOS\WebMVC-Projetos\AgoraVai PontoDigital\bin\Debug\netcoreapp2.2\AgoraVai PontoDigital.Views.dll
+C:\Users\Family\Documents\Gabriel Rodrigues Amador\SENAI\PROJETOS\WebMVC-Projetos\AgoraVai PontoDigital\bin\Debug\netcoreapp2.2\AgoraVai PontoDigital.Views.pdb
+C:\Users\Family\Documents\Gabriel Rodrigues Amador\SENAI\PROJETOS\WebMVC-Projetos\AgoraVai PontoDigital\obj\Debug\netcoreapp2.2\AgoraVai PontoDigital.csprojAssemblyReference.cache
+C:\Users\Family\Documents\Gabriel Rodrigues Amador\SENAI\PROJETOS\WebMVC-Projetos\AgoraVai PontoDigital\obj\Debug\netcoreapp2.2\AgoraVai PontoDigital.csproj.CoreCompileInputs.cache
+C:\Users\Family\Documents\Gabriel Rodrigues Amador\SENAI\PROJETOS\WebMVC-Projetos\AgoraVai PontoDigital\obj\Debug\netcoreapp2.2\AgoraVai PontoDigital.RazorAssemblyInfo.cache
+C:\Users\Family\Documents\Gabriel Rodrigues Amador\SENAI\PROJETOS\WebMVC-Projetos\AgoraVai PontoDigital\obj\Debug\netcoreapp2.2\AgoraVai PontoDigital.RazorAssemblyInfo.cs
+C:\Users\Family\Documents\Gabriel Rodrigues Amador\SENAI\PROJETOS\WebMVC-Projetos\AgoraVai PontoDigital\obj\Debug\netcoreapp2.2\AgoraVai PontoDigital.AssemblyInfoInputs.cache
+C:\Users\Family\Documents\Gabriel Rodrigues Amador\SENAI\PROJETOS\WebMVC-Projetos\AgoraVai PontoDigital\obj\Debug\netcoreapp2.2\AgoraVai PontoDigital.AssemblyInfo.cs
+C:\Users\Family\Documents\Gabriel Rodrigues Amador\SENAI\PROJETOS\WebMVC-Projetos\AgoraVai PontoDigital\obj\Debug\netcoreapp2.2\AgoraVai PontoDigital.TagHelpers.input.cache
+C:\Users\Family\Documents\Gabriel Rodrigues Amador\SENAI\PROJETOS\WebMVC-Projetos\AgoraVai PontoDigital\obj\Debug\netcoreapp2.2\AgoraVai PontoDigital.TagHelpers.output.cache
+C:\Users\Family\Documents\Gabriel Rodrigues Amador\SENAI\PROJETOS\WebMVC-Projetos\AgoraVai PontoDigital\obj\Debug\netcoreapp2.2\AgoraVai PontoDigital.RazorCoreGenerate.cache
+C:\Users\Family\Documents\Gabriel Rodrigues Amador\SENAI\PROJETOS\WebMVC-Projetos\AgoraVai PontoDigital\obj\Debug\netcoreapp2.2\Razor\Views\Avaliacao\Index.g.cshtml.cs
+C:\Users\Family\Documents\Gabriel Rodrigues Amador\SENAI\PROJETOS\WebMVC-Projetos\AgoraVai PontoDigital\obj\Debug\netcoreapp2.2\Razor\Views\DashBoard\Index.g.cshtml.cs
+C:\Users\Family\Documents\Gabriel Rodrigues Amador\SENAI\PROJETOS\WebMVC-Projetos\AgoraVai PontoDigital\obj\Debug\netcoreapp2.2\Razor\Views\Historia\Index.g.cshtml.cs
+C:\Users\Family\Documents\Gabriel Rodrigues Amador\SENAI\PROJETOS\WebMVC-Projetos\AgoraVai PontoDigital\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\Family\Documents\Gabriel Rodrigues Amador\SENAI\PROJETOS\WebMVC-Projetos\AgoraVai PontoDigital\obj\Debug\netcoreapp2.2\Razor\Views\Login\Cadastrado.g.cshtml.cs
+C:\Users\Family\Documents\Gabriel Rodrigues Amador\SENAI\PROJETOS\WebMVC-Projetos\AgoraVai PontoDigital\obj\Debug\netcoreapp2.2\Razor\Views\Login\Index.g.cshtml.cs
+C:\Users\Family\Documents\Gabriel Rodrigues Amador\SENAI\PROJETOS\WebMVC-Projetos\AgoraVai PontoDigital\obj\Debug\netcoreapp2.2\Razor\Views\Planos\Index.g.cshtml.cs
+C:\Users\Family\Documents\Gabriel Rodrigues Amador\SENAI\PROJETOS\WebMVC-Projetos\AgoraVai PontoDigital\obj\Debug\netcoreapp2.2\Razor\Views\Sac\Index.g.cshtml.cs
+C:\Users\Family\Documents\Gabriel Rodrigues Amador\SENAI\PROJETOS\WebMVC-Projetos\AgoraVai PontoDigital\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_HeaderNavBar.g.cshtml.cs
+C:\Users\Family\Documents\Gabriel Rodrigues Amador\SENAI\PROJETOS\WebMVC-Projetos\AgoraVai PontoDigital\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\Family\Documents\Gabriel Rodrigues Amador\SENAI\PROJETOS\WebMVC-Projetos\AgoraVai PontoDigital\obj\Debug\netcoreapp2.2\AgoraVai PontoDigital.RazorTargetAssemblyInfo.cache
+C:\Users\Family\Documents\Gabriel Rodrigues Amador\SENAI\PROJETOS\WebMVC-Projetos\AgoraVai PontoDigital\obj\Debug\netcoreapp2.2\AgoraVai PontoDigital.RazorTargetAssemblyInfo.cs
+C:\Users\Family\Documents\Gabriel Rodrigues Amador\SENAI\PROJETOS\WebMVC-Projetos\AgoraVai PontoDigital\obj\Debug\netcoreapp2.2\AgoraVai PontoDigital.Views.pdb
+C:\Users\Family\Documents\Gabriel Rodrigues Amador\SENAI\PROJETOS\WebMVC-Projetos\AgoraVai PontoDigital\obj\Debug\netcoreapp2.2\AgoraVai PontoDigital.dll
+C:\Users\Family\Documents\Gabriel Rodrigues Amador\SENAI\PROJETOS\WebMVC-Projetos\AgoraVai PontoDigital\obj\Debug\netcoreapp2.2\AgoraVai PontoDigital.pdb
+C:\Users\Family\Documents\Gabriel Rodrigues Amador\SENAI\PROJETOS\WebMVC-Projetos\AgoraVai PontoDigital\obj\Debug\netcoreapp2.2\AgoraVai PontoDigital.csproj.CopyComplete

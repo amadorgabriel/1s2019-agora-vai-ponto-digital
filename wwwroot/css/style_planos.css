@@ -1,0 +1,761 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style:none;
+    text-decoration: none;;
+}
+
+
+/*----- Menu -----*/
+
+.dropdown ul {
+    display: flex;
+    /* FALTA A COR E FAMILIA DA FONTE! */
+    font-family: 'Russo One', sans-serif;
+    justify-content: space-evenly;
+    background-color: #394B80;
+    padding: 1em ;
+}
+
+nav{
+    width: 100%;
+    position: fixed;
+}
+
+nav a{
+    padding: 1em 4em;
+    color: rgb(207, 133, 63);
+}
+nav a:hover{
+    color: rgb(207, 133, 63);
+    background-color: #0F2461;
+}
+.area_busca{
+    padding:4em 1em 1em 1em;
+    background-color: rgb(97, 110, 148);
+}
+.area_busca form{
+    display: flex;
+    justify-content: center;
+}
+#search_buscar {
+    border-radius: 0.5em;
+    height: 35px;
+    width: 35%;
+    background-color: #ccc;
+}
+#btn_buscar {
+    border-radius: 1em;
+    height: 35px;
+    width: 2%;
+    padding: 0.2em;
+    border: none;
+}
+/*---------MAIN------------*/
+
+
+h2{
+    font-size: 4em;
+    font-family: 'Russo One', sans-serif;
+}
+
+.h2{
+    font-family: 'Russo One', sans-serif;
+    padding: 0.5em 1.5em ;
+    color: #ff9933;
+}
+.h2_Cadastro{
+    font-family: 'Russo One', sans-serif;
+    padding: 3em 1.5em ;
+    color: #ff9933;
+}
+main{
+    display: block;
+    text-align: center;
+    width: 100%;
+
+    background-color: #8594C1;
+}
+
+.testePadding{
+    height: 60vh;
+}
+
+#area_planos{
+    display: block;
+    justify-content: center;
+    width: 100%;
+    height: 140vh;
+    padding: 1em 4em 4em 4em;
+    background-color: #8594C1;
+}
+
+
+#area_choice{
+    display: none;
+    width: 20%;
+    height: 900px;
+    background-color: rgb(96, 119, 187);
+}
+
+#area_choice > div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#area_choice > div img{
+    margin: 1.5em;
+}
+
+.h3{
+    padding-top: 0.3em;
+}
+
+.botoes_choice {
+    background-color: #214d21 ;
+    height: 50px;
+    border-radius: 8px;
+    border:none;
+    width: 75%;
+    color: rgb(207, 133, 63);
+    font-family: 'Russo One', sans-serif;
+    margin-top: -2em;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5em;
+    box-shadow: 1px 1px 1px 1px #000;
+}
+
+.botoes_choice:hover{
+    background-color: #bbd6bb;
+}
+
+.botoes_choice_media{
+    background-color: #214d21 ;
+    height: 50px;
+    border-radius: 8px;
+    border:none;
+    width: 75%;
+    color: rgb(207, 133, 63);
+    font-family: 'Russo One', sans-serif;
+    margin-top: -2em;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5em;
+    box-shadow: 1px 1px 1px 1px #000;
+}
+
+.botoes_choice_media:hover{
+    background-color: #bbd6bb;
+}
+
+.h4{
+    font-family: 'Russo One', sans-serif;
+    color: rgb(202, 124, 52);
+    margin: 1em;
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+}
+/* NESTE MOMENTO VEM O JAVA SCRIPT */
+
+#section_master_planos{
+    display: flex;
+}
+
+.secundária{
+    display: flex;
+
+}
+
+#area_boxs_planos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stylePlan{
+    margin: 1em 1em;
+    padding: -1em -2em;
+    background-color: #336666;
+    height: 60vh;
+}
+
+.stylePlan_2{
+    margin: 1em 1em;
+    padding: 0em 2em;
+    background-color: #336666;
+    height: 60vh;
+}
+
+/* NESE MMOMENTO VEM O JAVASCRIPT */
+
+
+.active{
+    display: block;
+}    
+
+
+/* WARNING FINISH FORM HERE */
+
+.none{
+    display: none;
+}
+
+
+.p_planos{
+    color: #fff;
+    font-family: 'Russo One', sans-serif;
+    text-align: left;
+    font-size: 1.2em;
+    padding: 2em 1.5em;
+}
+
+.preço_planos{
+    font-family: 'Russo One', sans-serif;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 6.5em;
+    padding: 0em 0.5em;
+    margin-bottom: 0.3em;
+    color: #bb7128;
+}
+
+
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#select{
+    height: 20px;
+    width: 60%;
+    margin-bottom: 1em;
+}
+
+#btn_compre{
+    color: #000;
+    font-weight: bold;
+    font-size: 2em;
+    width: 50%;
+    height: 50px;
+    border-radius: 10px;
+    margin-bottom: 1em;
+    background-color: #99cc99 ;
+}
+
+#btn_compre:hover{
+    color: #000;
+    background-color: #a9cfa9ca ;
+    font-weight: bold;
+    font-size: 2.2em;
+
+}
+
+/*-------MAIN QUALIDADE--------*/
+
+.h2_qualidade{
+    color: #6699cc;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.7em;
+}
+
+.p_qualidade{
+    text-align: center;
+    font-family: 'Russo One', sans-serif;
+    color: rgb(58, 58, 58); 
+}
+
+.p_qualidade_2{
+    text-align: center;
+    font-family: 'Russo One', sans-serif;
+    color: #fff; 
+}
+
+#area_qualidade{
+    background-color: #cccc66;
+    display: flex;
+    padding: 2em;
+}
+
+.video{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center
+}
+
+.cont_video{
+    display: flex;
+    width: 50%;
+    text-align: center;
+}
+
+/*--------MAIN 30 DIAS----------*/
+
+.h2_gratuito{
+    color: #cccc66;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.7em;
+}
+
+#area_gratuidade{
+    display: flex;
+    background-color: #6699cc;
+    padding: 2em;
+}
+
+.cont_gratuito{
+    align-items: center;
+    width: 50%;
+    text-align: center;
+}
+
+.cont_gratuito p{
+    margin-bottom: 1em;
+}
+
+#form{
+    margin: 4em 3em 3em;
+    border-radius: 5px;
+    background-color: #cccc66;
+    height: 60px;
+    width: 70%;
+}
+
+#textarea_gratuito{
+    width: 65%;
+    background-color: #cccc66;
+    height: 45px;
+    border-color: #ccc;
+}
+
+#btn_enviar_gratuito{
+    background-color: #609ddb;
+    border-radius: 5px;
+    color: #000;
+    border: none;
+    height: 45px;
+    width: 25%;
+    margin: 0.5em 0.5em;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+#btn_enviar_gratuito:hover{ 
+    background-color: #6699cc;
+}
+
+.img_gratuito{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center
+}
+
+.img_gratuito img{
+    width: 65%;
+}
+
+/* INICIO DO FOOTER */
+
+#footer_footer{
+    background-color: rgb(30, 46, 93);
+}
+.direitos{
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    background-color: rgb(0, 0, 0)
+}
+
+#footer{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2em;
+}
+
+#footer_footer p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.box_footer{
+    max-width: 25%;
+}
+
+.box_footer h4{
+    text-align: center;
+    justify-content: space-around;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #000;
+    margin-bottom: 0.5em;
+}
+
+.div_contato_icon div{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#logo_senai{
+    padding-top: 1em;
+    max-width: 180px;
+    height: 70px;
+    width: 100%;
+}
+
+#footer{
+    margin: 0em 0.5em;
+}
+#icon{
+    max-width: 70px;
+    width: 90%;
+    height: 60px
+}
+
+.justificado{
+    text-align: center;
+}
+
+
+  
+ 
+
+/* @media(max-width: 1275px){
+
+    .btn_menu{
+        display: flex;
+        margin-top: -0.5em;
+        padding: 1.5em;
+    }
+         
+    #search_buscar{
+        height: 50px;
+        width: 400px;
+    }
+         
+    #btn_buscar{
+        height: 46px;
+        width: 130px;
+    }
+    
+     .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        font-size: 2em;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 1em 2em;
+        margin: 0em 1em ;
+        z-index: 1;
+        font-weight: bold;
+    }
+         
+    .login_cadastre-se a{
+        display: flex;
+        margin-top: 0.5em;
+        margin-right: 0.5em;
+        font-size: 20px;
+    }
+
+    h2{
+        font-size: 3em;
+    }
+
+    .h4{
+        margin: 1em 1em 0.5em 1em;
+        font-size: 1.5em;
+    }
+    
+    .preço_planos{
+        font-size: 6em;
+        margin-bottom: 0.3em;
+    }
+
+    #img_planos{
+        height: 180px;
+    }
+
+    #area_choice > div{
+        margin-top: 1em;
+    }
+
+    .h2_qualidade{
+        margin-bottom: 0.3em;
+    }
+    
+    .img_gratuito img{
+        width: 85%;
+    }
+
+    #icon{
+        width: 70px;
+        height: 70px;
+    }
+    
+    #logo_senai{
+        height: 60px;
+        width: 180px;
+    }
+}
+
+@media(max-width: 1000px){
+
+    .btn_menu{
+        display: flex;
+        margin-top: -0.5em;
+        margin-left: 1em;
+        padding: 1.5em;
+    }
+
+    .dropdown-content {
+        font-size: 1.5em;
+        min-width: 90px;
+        padding: 1em 1.5em;
+        margin: 0em 1em ;
+    }
+         
+    #search_buscar{
+        height: 35px;
+        width: 300px;
+    }
+         
+    #btn_buscar{
+        font-size: 1em;
+        height: 32px;
+        width: 90px;
+     }
+         
+    .login_cadastre-se a{
+        display: flex;
+        margin-top: 0.5em;
+        margin-right: 0.5em;
+        font-size: 18px;
+    }
+
+    .preço_planos{
+        font-size: 4em;
+        margin-bottom: 0.3em;
+    }
+    
+    #area_planos{
+        width: 80%;
+        height: 850px;
+    }
+
+    #area_choice{
+        height: 850px;
+    }
+
+    .planos{
+        height: 720px;
+    }
+
+    #btn_compre{
+        font-size: 1.5em;
+        width: 60%;
+        height: 50px;
+    }
+
+    #img_planos{
+        height: 150px;
+    }
+
+    #area_choice > div{
+        margin-top: 4em;
+    }
+
+    #icon{
+        width: 50px;
+        height: 50px;
+    }
+    
+    #logo_senai{
+        height: 50px;
+        width: 130px;
+    }
+
+    #form{
+        margin: 4em 0em 3em;
+        width: 100%;
+    }
+}
+
+@media(max-width: 765px){
+
+    .btn_menu{
+        display: flex;
+        margin-top: 0;
+        margin-left: 1em;
+        padding: 1em;
+    }
+         
+    #search_buscar{
+        height: 25px;
+        width: 200px;
+    }
+         
+    #btn_buscar{
+        font-size: 0.8em;
+        height: 20px;
+        width: 60px;
+     }
+         
+    .login_cadastre-se a{
+        display: flex;
+        margin-top: 0.5em;
+        margin-right: 0.5em;
+        font-size: 12px;
+    }
+
+    #icon{
+        width: 30px;
+        height: 30px;
+    }
+    
+    #logo_senai{
+        height: 40px;
+        width: 90px;
+    }
+
+   
+
+    #area_planos{
+        width: 65%;
+        height: 1700px;
+    }
+    
+    #area_choice{
+        width: 35%;
+        height: 1700px;
+    }
+
+    #area_boxs_planos{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .planos{
+        margin: 1em 1em;
+        width: 90%;
+        background-color: #336666;
+        height: 750px;
+    }
+    
+    .preço_planos{
+        font-size: 4em;
+        margin-bottom: 0.3em;
+    }
+
+    #area_qualidade{
+        display: flex;
+        flex-direction: column;
+        padding: 2em;
+    }
+    
+    .video{
+        width: 100%;
+    }
+    
+    .video iframe{
+        height: 310px;
+    }
+
+    h2{
+        font-size: 2em;
+    }
+
+    .cont_video{
+        width: 100%;
+    }
+
+    .h2_qualidade{
+        margin-top: 1em;
+        margin-bottom: 0.7em;
+        width: 100%;
+    }
+  
+    #area_gratuidade{
+        display: flex;
+        flex-direction: column;
+        padding: 2em;
+        width: 100%;
+    }
+    
+    .h2_gratuito{
+        margin-bottom: 0.7em;
+    }
+    
+    .cont_gratuito{
+        width: 90%;
+    }
+    
+    .img_gratuito{
+        width: 100%;
+       
+    }
+    
+    .img_gratuito img{
+        width: 70%;
+        height: 300px;
+        margin-left: -3em;
+    }
+
+}
+
+@media (max-width: 480px){
+
+    .btn_menu{
+        display: flex;
+        margin-top: 0;
+        margin-left: 0.5em;
+        padding: 0.5em;
+    }
+
+    .dropdown-content {
+        font-size: 1em;
+        min-width: 70px;
+        padding: 1em 1em;
+        margin: 0em 1em ;
+    }
+         
+    #search_buscar{
+        height: 15px;
+        width: 80%;
+    }
+         
+    #btn_buscar{
+        font-size: 0.7em;
+        height: 15px;
+        width: 15%;
+    }
+         
+    .login_cadastre-se a{
+        display: flex;
+        margin-top: 0.5em;
+        margin-right: 0.5em;
+        font-size: 8px;
+    }
+
+    #icon{
+        width: 30px;
+        height: 30px;
+    }
+    
+    #logo_senai{
+        height: 30px;
+        width: 70px;
+    } 
+
+    .direitos{
+        font-size: 0.8em;
+    }
+} */

@@ -1,0 +1,36 @@
+@{
+    Layout = "_Layout";
+    var userName = (string) ViewData["UserNomeLogado"];
+    var userEmail = (string) ViewData["UserLogado"];
+}
+<header>
+@{
+    Html.RenderPartial("_HeaderNavBar");
+}
+</header>
+<main id="main_cadastro">
+     <div id="cadastrar">
+            <h3>Escreva sua Avaliação!</h3>
+
+            <form action='@Url.Action("CadastrarAvaliacao","Avaliacao")' method="POST">
+                @if(!string.IsNullOrEmpty(userName)){
+                    <input class="input" type="text" name="nome" value="@userName" placeholder="Digite o nome da empresa ou usuário" required>
+
+                }else{
+                    <input class="input" type="text" name="nome" placeholder="Digite o nome da empresa ou usuário" required>
+                }
+                <br />
+
+                @if(!string.IsNullOrEmpty(userEmail)){
+                    <input class="input" type="email" name="email" value="@userEmail" placeholder="Digite seu e-mail" required>
+                }else{
+                    <input class="input" type="email" name="email" placeholder="Digite seu e-mail" required>
+                }
+                <br />
+
+                <textarea class="azul_text" placeholder="Digite seu Comentário Aqui" required name="avaliacao"></textarea>
+                <br />
+                <input class="input_submit" type="submit" value="Comentar!">
+            </form>
+        </div>
+</main>

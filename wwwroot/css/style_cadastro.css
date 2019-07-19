@@ -1,0 +1,376 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+/* INICIO MENU */
+
+.dropdown ul {
+    display: flex;
+    /* FALTA A COR E FAMILIA DA FONTE! */
+    font-family: 'Russo One', sans-serif;
+    justify-content: space-evenly;
+    background-color: #394B80;
+    padding: 1em;
+}
+
+nav{
+    width: 100%;
+    position: fixed;
+}
+nav a{
+    padding: 1em 4em;
+    color: rgb(207, 133, 63);
+}
+nav a:hover{
+    color: rgb(207, 133, 63);
+    background-color: #0F2461;
+}
+.area_busca{
+    padding:4.1em 1em 1em 1em;
+    background-color: rgb(97, 110, 148);
+}
+.area_busca form{
+    display: flex;
+    justify-content: center;
+}
+#search_buscar {
+    border-radius: 0.5em;
+    height: 35px;
+    width: 35%;
+    background-color: #ccc;
+}
+#btn_buscar {
+    border-radius: 1em;
+    height: 35px;
+    width: 2%;
+    padding: 0.2em;
+    border: none;
+}
+
+/* Tabela DashBoard*/
+
+.h2_table{
+    font-family: 'Russo One', sans-serif;
+    font-size: 3em;
+    margin: 0.5em;
+    font-weight: bold;
+    color: rgb(185, 97, 15);  
+}
+
+.h2_table_user{
+    font-family: 'Russo One', sans-serif;
+    font-size: 3em;
+    margin: 2em 0em 1em 0em;
+    font-weight: bold;
+    color: rgb(185, 97, 15);  
+}
+
+.h3_count{
+    font-family: 'Russo One', sans-serif;
+    font-size: 1.5em;
+    margin: 0.5em;
+    font-weight: bold;
+    color: rgb(124, 69, 17);
+}
+
+.thead{
+    font-family: 'Russo One', sans-serif;
+    color: rgb(206, 138, 75);
+    font-weight: bold;
+    font-size: 1.5em;
+    background-color: rgb(122, 0, 192);
+}
+
+
+.tbody{
+    font-family: 'Russo One', sans-serif;
+    background-color: rgb(178, 110, 255);
+}
+
+.thThead{
+    border-radius: 1em 1em 0em 0em;
+    padding: 1em;
+}
+
+.th_table{
+    padding: 0.5em 0em;
+}
+
+.back-red{
+    background-color: brown;
+    border-radius: 0.5em;
+    color: #fff;
+    font-weight: bold;
+    padding: 0.5em;
+    margin: 0.5em 0.5em;
+}
+
+.back-yellow{
+    margin: 0.5em 0.5em;
+    border-radius: 0.5em;
+    background-color: rgb(177, 177, 65);
+    color: #fff;
+    font-weight: bold;
+    padding: 0.5em;
+}
+
+#mainDash{
+    min-height: 50vh;
+    display: flex;
+    padding: 3em;
+    flex-direction: column;
+    background-color: rgb(77, 118, 241);
+    color: #000; 
+    text-align: center;
+}
+
+.back{
+    background-color: rgb(47, 88, 212);
+    min-height: 50vh;
+    display: flex;
+    padding: 3em;
+    flex-direction: column;
+    color: #000; 
+    text-align: center;
+
+}
+
+.table{
+    margin: 2em 0em 3em 0em;
+}
+
+.table_2{
+    margin: 2em 0em 6em 0em;
+}
+
+.section_coments{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0em 0em 0em 0em;
+    max-width: 40%;
+   
+}
+
+.subMASTER{
+    display: flex;
+    justify-content: space-around;
+}
+
+.div_circle{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: #7396FF;
+    padding: 0em 0em 2em 0em;
+    border-radius: 10px;
+}
+
+.div_circle_2{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: #7396FF;
+    padding: 0em 0em 2em 0em;
+    border-radius: 10px;
+    max-width: 40%;
+}
+
+.circulo{
+    padding: 1em 0em;;
+    background-color: rgb(128, 128, 128);
+    border-radius: 100%;
+    font-family: 'Russo One', sans-serif;
+    font-weight: bold;
+    font-size: 3em;
+    color: rgb(129, 62, 0);
+    max-width: 50%;
+    margin-left: 1.8em;
+    box-shadow: 1px 1px 1px 1px #000;
+}
+
+.circulo_user{
+    box-shadow: 1px 1px 1px 1px #000;
+    background-color: rgb(128, 128, 128);
+    border-radius: 100%;
+    font-family: 'Russo One', sans-serif;
+    font-weight: bold;
+    font-size: 6em;
+    margin: 0.5em ;
+    padding: 1.5em 2em;
+    color: rgb(129, 62, 0);
+}
+
+.article{
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Cadastro e Login */
+
+
+ #main_cadastro{
+    display: flex;
+    height: 51vh;
+    justify-content: space-evenly;
+    background-color: #7396FF;
+    padding: 2.5em 0em;
+ }
+
+#cadastrar{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    width: 30%;
+
+}
+
+#cadastrar h3{ 
+    font-family: 'Russo One', sans-serif;
+    font-size: 1.7em;
+    font-weight: bold;
+}
+
+#cadastrar form{
+    display: block;
+    text-align: center;
+    padding: 0.5em 0em;
+}
+
+.input{
+    margin: 0.5em 0em;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    background-color: #99ccff;
+}
+
+.input_submit{
+    border: none;
+    font-weight: bold;
+    margin-top: 1em;
+    border-radius: 3px;
+    height: 50px;
+    width: 70%;
+    background-color: #336666;
+    
+}
+.input_submit:hover{
+    color: rgb(207, 133, 63);
+    font-weight: bold;
+    background-color: #1c5353;
+}
+
+
+#linha_vertical{
+    margin: 5em 0em;
+    height: 300px;
+    width: -10%;
+    background-color: #000;
+}
+
+
+#logar{
+    text-align: center;
+    width: 30%;
+}
+
+#logar h3{ 
+    font-family: 'Russo One', sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#logar form{
+    display: block;
+    text-align: center;
+    padding: 0.5em 0em;
+}
+
+
+
+#caixa_pós_cadastro{
+    display: none;
+}
+
+.azul_text{
+    margin: 0.5em 0em;
+    height: 50px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    background-color: #99ccff;
+}
+
+
+
+/* INICIO DO FOOTER */
+
+#footer_footer{
+    background-color: rgb(30, 46, 93);
+}
+.direitos{
+    color: #fff;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    padding: 1em;
+}
+
+#footer{
+    justify-content: space-evenly;
+    display: flex;
+    padding: 2em;
+}
+
+#footer_footer p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.box_footer{
+    max-width: 25%;
+}
+
+.box_footer h4{
+    text-align: center;
+    justify-content: space-around;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #000;
+margin-bottom: 0.5em;
+}
+
+.div_contato_icon div{
+display: flex;
+justify-content: space-evenly;
+}
+
+#logo_senai{
+padding-top: 1em;
+max-width: 180px;
+height: 70px;
+width: 100%;
+}
+
+#footer{
+margin: 0em 0.5em;
+}
+#icon{
+max-width: 70px;
+width: 90%;
+height: 60px
+}
+
+.justificado{
+text-align: center;
+}
+

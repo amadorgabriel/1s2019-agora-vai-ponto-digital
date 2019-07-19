@@ -1,0 +1,144 @@
+@using AgoraVai_PontoDigital.Models;
+@using System.IO;
+
+@{
+    Layout = "_Layout";
+    var listaAprovada = (List<AvaliacaoModel>) ViewData["listaAprovada"];
+    var userLogado = (string) ViewData["UserLogado"];
+}
+
+<header>
+    @{
+    Html.RenderPartial("_HeaderNavBar");
+    }
+    <article class="area_logo">
+        <div>
+            <img src="logos/logo.png" id="logo_img" alt="Logo Agora Vai!">
+        </div>
+    </article>
+</header>
+
+<main>
+    <section id="area_planos">
+
+        <div>
+            <h2>
+                Gerencie seu Futuro com sua Empresa
+            </h2>
+        </div>
+
+        <div class="div_planos">
+            <section id="box">
+                <h3>Pequena</h3>
+                <a href='@Url.Action("Index" , "Planos")'><img id="img" src="Imagens/Empresas_pequenas.png" alt="Imagem Ilustrativa de uma empresa média" /></a>
+
+            </section>
+
+            <div id="box">
+                <section class="box_plano_medio">
+                    <h3>Média</h3>
+                    <a href='@Url.Action("Index" , "Planos")' ><img id="img" src="Imagens/Empresas_medias.png" alt="Imagem Ilustrativa de uma empresa média" /></a>
+                </section>
+
+                <article class="txt_btn_plano_medio">
+                    <p class="p_sessão_2">
+                        Saiba mais acerca de nossos planos clicando
+                        <br />
+                        no botão abaixo.
+                    </p>
+                    <a href='@Url.Action("Index" , "Planos")'>Veja Mais</a>
+                </article>
+            </div>
+            <section id="box">
+                <h3>Grande</h3>
+                <a href='@Url.Action("Index" , "Planos")' ><img id="img" src="Imagens/Empresas_grandes.png" alt="Imagem Ilustrativa de uma empresa média" /></a>
+            </section>
+        </div>
+    </section>
+    <section id="area_suporte">
+
+        <div>
+            <h2>Suporte Altamente Eficaz</h2>
+        </div>
+
+        <article class="area_box_suporte">
+
+            <div class="box_suporte_home box_suporte_suporte box_baixa">
+                <div>
+                    <h3>Suportes</h3>
+                    <p class="p_suporte">
+                        O software Ponto Digital da empresa Agora Vai visa a melhor
+                        experiência do usuário. O suporte é altamente eficaz e conforme
+                        o seu plano escolhido a tempo de resposta pode variar,
+                        entretanto todo(a) problema, dúvida ou dificuldade entre
+                        em contato com a equipe de suporte e seja atendido via email,
+                        redes sociais entre outros contatos, saiba Mais!
+                    </p>
+                    <a class="hover" href='@Url.Action("Index", "Sac")'>Saiba Mais</a>
+                </div>
+            </div>
+
+            <div class="box_suporte_home box_vantagens">
+                <div class="box_vantagens_txt">
+                    <div>
+                        <h3>Saiba o porque
+                            <br />
+                            adiquirir
+                            <br />
+                            o Ponto Digital!</h3>
+                    </div>
+                    <div>
+                        <p class="p_suporte">
+                            Confira quais são as vantagens e opniões
+                            dos clientes que já investiram no nosso
+                            software Ponto Digital!
+                        </p>
+                    </div>
+                    @if(!string.IsNullOrEmpty(userLogado)){
+                        <a class="hover" id="NÃO-REMOVA"  href='@Url.Action("Index", "Avaliacao")'>Saiba Mais</a>
+                    }else{
+                        <a class="hover" id="NÃO-REMOVA"  href='@Url.Action("Index", "Login")'>Saiba Mais</a>
+                    }
+                </div>
+            </div>
+
+            <div class="box_suporte_home box_baixa box_reclame">
+                <div>
+                    <h3>Reclame Aqui</h3>
+                    <div>
+                        <div>
+                            <p> As reclamações acerca dos produtos, serviços, atendimento
+                                <br />
+                                ou funcionalidade podem ser realizadas no próprio site,
+                                <br />
+                                acesse a aba SAC no menu principal, em breve lanÇaremos
+                                <br />
+                                um chat atendimento, onde a qualquer momento poderá ser acessado.
+                        </div>
+                        <img src="Imagens/Icone_chatbot.png" id="reclame_img" alt="Icone para chatbot" height="80px"
+                            width="80px">
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        </div>
+
+        <article id="comentarios" >
+            <div>
+                <h2>Alguns dos Comentários Sobre a Empresa</h2>
+            </div>
+            <div >
+
+            @foreach(var item in listaAprovada){
+                <div class="div">
+                <p class="msn">"@item.Mensagem"</p>
+                <br />
+                <p>Nome: @item.ClienteNome</p>
+                <p>Data Comentada: @item.DataComentario</p>
+                </div>
+            }
+            </div>
+        </article>
+    </section>
+</main>

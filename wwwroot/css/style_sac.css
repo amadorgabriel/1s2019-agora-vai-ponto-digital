@@ -1,0 +1,548 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* INICIO MENU */
+
+.dropdown ul {
+    display: flex;
+    /* FALTA A COR E FAMILIA DA FONTE! */
+    font-family: 'Russo One', sans-serif;
+    justify-content: space-evenly;
+    background-color: #394B80;
+    padding: 1em;
+}
+
+nav{
+    width: 100%;
+    position: fixed;
+}
+
+nav a{
+    padding: 1em 4em;
+    color: rgb(207, 133, 63);
+}
+nav a:hover{
+    color: rgb(207, 133, 63);
+    background-color: #0F2461;
+}
+.area_busca{
+    padding:4em 1em 1em 1em;
+    background-color: rgb(97, 110, 148);
+}
+.area_busca form{
+    display: flex;
+    justify-content: center;
+}
+#search_buscar {
+    border-radius: 0.5em;
+    height: 35px;
+    width: 35%;
+    background-color: #ccc;
+}
+#btn_buscar {
+    border-radius: 1em;
+    height: 35px;
+    width: 2%;
+    padding: 0.2em;
+    border: none;
+}
+
+/* INICIO CONTEÚDO MAIN */
+
+#perguntas_frequentes{
+    background-color: rgb(82, 107, 184);
+    height: 170vh;
+}
+.h2_contato{
+    padding: 0em 0em 2em 0em;
+    font-family: 'Russo One', sans-serif;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    color: rgb(207, 133, 63);
+
+}
+
+._h2{
+    font-family: 'Russo One', sans-serif;
+    padding: 0.5em 0em 1em 0em;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    color: rgb(207, 133, 63);
+
+}
+
+.tit_serviços{
+    padding: 1em 0em 1.5em;
+    font-family: 'Russo One', sans-serif;
+    margin-top: -1em;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+ 
+.h3{
+    font-family: 'Russo One', sans-serif;
+    font-size: 1.3em;
+    text-align: left;
+    padding: 0.5em 0em; 
+    color:  rgb(201, 125, 55);
+    
+}
+
+
+
+#seção_1{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5%;
+    padding: 3em 8em 4em;
+}
+
+.txt_perguntas{ /*----------WARNING!-------------*/
+    padding: 0em 0em 0em 2em;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #fff;
+} 
+
+
+.area_perguntas{
+    width: 65%;
+    margin: 2em;
+}
+
+/* .h3:hover{
+    border-radius: 3px;
+    width: 100%;
+    padding: 3% 2% 3% 2%;
+    background-color: #6699ccb2;
+} */
+
+.avalie_serviços{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1.5em;
+    margin: 2em;
+    font-size: 1.2em;
+    background-color: #6699cc;
+    width: 35%;
+}
+
+.avalie_serviços p {
+    text-align: justify;
+    
+}
+
+#seção_2{
+    padding: 0em 8em;
+}
+
+#seção_2 article{
+    margin: 1em;
+    padding: 1em;
+    width: 80%;
+    border-radius: 5px;
+    background-color: #6699cc;
+}
+
+.tit_input{
+    font-size: 1.5em;
+    padding: 0em 0.5em 0.5em;
+    font-family: 'Russo One', sans-serif;
+}
+
+.tit_ratear{
+    font-size: 1em;
+    margin-right: 0.5em;
+    font-family: 'Russo One', sans-serif;
+
+}
+
+.fundo_input_textarea{
+    margin: 0em 10em 0em ;
+    display: flex;
+    width: 70%;
+    justify-content: flex-end;
+    padding: 1em  0.5em;
+    background-color: #99ccff
+}
+
+.fundo_input_textarea p {
+    padding: 1em;
+}
+
+
+#next_btn{
+    display: flex;
+    color: #fff;
+    font-weight: bold;
+    padding: 0.8em 1.2em;
+    border:none;
+    background-color: #336666;
+    border-radius: 5px;
+    margin-top: 50%;
+}
+
+#enviar_btn{
+    display: flex;
+    color: #fff;
+    font-weight: bold;
+    padding: 0.8em 1.2em;
+    border:none;
+    background-color: #336666;
+    border-radius: 5px;
+    margin: 0.5em 10em;;
+}
+
+#next_btn:hover, #enviar_btn:hover{
+    background-color: rgba(255, 255, 255, 0.719);
+    color: #336666;
+}
+.util{
+    display: flex;
+}
+
+.sim{
+    margin-right: 0.5em;
+}
+
+.ratear{
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+/*---------CONTATOS---------*/
+
+#contate-nos{
+    padding: 5%;
+}
+
+#contate-nos div{
+    display: flex;
+    margin: 0% 15%;
+    padding: 2%;
+    border-radius: 5px;
+    width: 70%;
+    background-color: #6699cc;
+}
+
+.fundo_contato form{
+    width: 320%;
+}
+
+.fundo_azul_form{
+    height: 60px;
+    width: 85%;
+    margin: 1em 2em;
+    border-radius: 8px;
+    border: none;
+    background-color: #99ccff;
+}
+
+.fundo_azul_form_text{
+    height: 120px;
+    width: 95%;
+    margin: 1em 2em;
+    border-radius: 8px;
+    border: none;
+    background-color: #99ccff;
+}
+
+#enviar_btn_com{
+    display: flex;
+    color: #fff;
+    font-weight: bold;
+    padding: 1em 2em;
+    border:none;
+    background-color: #336666;
+    border-radius: 5px;
+    margin-left: 40%;
+}
+
+#enviar_btn_com:hover{
+    background-color: rgba(255, 255, 255, 0.719);
+    color: #336666;
+}
+
+/* INICIO DO FOOTER */
+
+#footer_footer{
+    background-color: rgb(30, 46, 93);
+}
+.direitos{
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    background-color: rgb(0, 0, 0)
+}
+
+#footer{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2em;
+}
+
+#footer_footer p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.box_footer{
+    max-width: 25%;
+}
+
+.box_footer h4{
+    text-align: center;
+    justify-content: space-around;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #000;
+    margin-bottom: 0.5em;
+}
+
+.div_contato_icon div{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#logo_senai{
+    padding-top: 1em;
+    max-width: 180px;
+    height: 70px;
+    width: 100%;
+}
+
+#footer{
+    margin: 0em 0.5em;
+}
+#icon{
+    max-width: 70px;
+    width: 90%;
+    height: 60px
+}
+
+.justificado{
+    text-align: center;
+}
+
+
+
+/* 
+@media(max-width: 1275px){
+    .btn_menu{
+        display: flex;
+        margin-top: -0.5em;
+        padding: 1.5em;
+    }
+         
+    #search_buscar{
+        height: 50px;
+        width: 400px;
+    }
+         
+    #btn_buscar{
+        height: 46px;
+        width: 130px;
+    }
+    
+     .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        font-size: 2em;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 1em 2em;
+        margin: 0em 1em ;
+        z-index: 1;
+        font-weight: bold;
+    }
+         
+    .login_cadastre-se a{
+        display: flex;
+        margin-top: 0.5em;
+        margin-right: 0.5em;
+        font-size: 20px;
+    }
+
+}
+
+@media(max-width: 1000px){
+
+    .btn_menu{
+        display: flex;
+        margin-top: -0.5em;
+        margin-left: 1em;
+        padding: 1.5em;
+    }
+
+    .dropdown-content {
+        font-size: 1.5em;
+        min-width: 90px;
+        padding: 1em 1.5em;
+        margin: 0em 1em ;
+    }
+         
+    #search_buscar{
+        height: 35px;
+        width: 300px;
+    }
+         
+    #btn_buscar{
+        font-size: 1em;
+        height: 32px;
+        width: 90px;
+     }
+         
+    .login_cadastre-se a{
+        display: flex;
+        margin-top: 0.5em;
+        margin-right: 0.5em;
+        font-size: 18px;
+    }
+
+    .area_perguntas{
+        margin-left: -4em;
+    }
+
+    .avalie_serviços{
+        margin-right: -4em;
+    }
+
+    .fundo_input_textarea{
+        margin: 0em 15em 0em 2em ;
+        width: 80%;
+        padding: 1em  0.5em;
+    }
+
+    #seção_2 article{
+        margin: 2% 0%;
+        padding: 1em;
+        width: 100%;
+    }
+
+    #seção_2{
+        padding: 0em 3em;
+    }
+
+    #enviar_btn{
+        padding: 0.8em 1.2em;
+        margin: 0.5em 2em;
+    }
+}
+
+@media(max-width: 765px){
+    .btn_menu{
+        display: flex;
+        margin-top: 0;
+        margin-left: 1em;
+        padding: 1em;
+    }
+         
+    #search_buscar{
+        height: 25px;
+        width: 200px;
+    }
+         
+    #btn_buscar{
+        font-size: 0.8em;
+        height: 20px;
+        width: 60px;
+     }
+         
+    .login_cadastre-se a{
+        display: flex;
+        margin-top: 0.5em;
+        margin-right: 0.5em;
+        font-size: 12px;
+    }
+
+    #seção_1{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+    
+    .area_perguntas{
+        width: 100%;
+        margin: 1em;
+        margin-top: -1em;
+        margin-left: -5em;
+    }
+    
+    .area_perguntas div{
+        width: 70%;
+    } 
+
+    .avalie_serviços{
+        margin: 2em 2em 1em -4em;
+        width: 80%;
+    }
+
+    #seção_2 article{
+        margin: 1em 0em;
+    }
+
+    .fundo_azul_form_text{
+        height: 100px;
+        width: 85%;
+        margin: 1em 2em;
+        
+    }
+
+    #enviar_btn_com{
+        margin-left: 35%;
+    }
+
+  
+}
+
+@media (max-width: 480px){
+    .btn_menu{
+        display: flex;
+        margin-top: 0;
+        margin-left: 0.5em;
+        padding: 0.5em;
+    }
+
+    .dropdown-content {
+        font-size: 1em;
+        min-width: 70px;
+        padding: 1em 1em;
+        margin: 0em 1em ;
+    }
+         
+    #search_buscar{
+        height: 15px;
+        width: 80%;
+    }
+         
+    #btn_buscar{
+        font-size: 0.7em;
+        height: 15px;
+        width: 15%;
+    }
+         
+    .login_cadastre-se a{
+        display: flex;
+        margin-top: 0.5em;
+        margin-right: 0.5em;
+        font-size: 8px;
+    }
+
+    #next_btn{
+        margin-top: 180%;
+    }
+} */
+
+
+
+
