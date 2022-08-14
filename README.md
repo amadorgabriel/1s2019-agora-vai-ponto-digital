@@ -1,16 +1,14 @@
-# Ponto Digital Agora Vai - 1T Dev. de Sistemas 
+# Ponto Digital - 1T Dev. de Sistemas 
 
 <p>
-    <img src="https://github.com/amadorgabriel/2s2019-sprint-1-bd/blob/master/website-ref/imagens/home_screenshot.png" height="500px">
+    <img src="https://github.com/amadorgabriel/1s2019-agora-vai-ponto-digital/blob/master/web/imagens/home_screenshot.png" height="300px">
 </p>
 
-## 📝Projetos
+## 📝Projeto
 
-Sistema semestral E-Commerce back-end em Csharp, utilização de sistemas de login, autenticacão, dashboard, compra e venda.
+Sistema administrativo desenvolvido como projeto de conclusão do primeiro semestre do curso de Desenvolvimento de Sistemas no SENAI. 
 
-**Perfis:**
-- Cliente / usuário 
-- Administrador
+**Perfis:** Cliente, Usuário e Admin
 
 **Funcionalidades:**
 - Autenticação.
@@ -19,7 +17,7 @@ Sistema semestral E-Commerce back-end em Csharp, utilização de sistemas de log
 - Dashboard com aprovações de comentários e métricas. 
 
 
-## Para rodar:
+### Para rodar:
 Tenha instalado o ``npm`` e execute o ``npm run`` na pasta `/app`.
 
 
